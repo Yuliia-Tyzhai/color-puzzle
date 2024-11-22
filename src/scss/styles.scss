@@ -39,6 +39,19 @@ body {
   font-size: 12px;
   line-height: 1.5;
   color: #020202;
+  height: 2500px;
+
+  @include media(mobile) {
+    background: url('/img/background/background-mob.jpg') repeat center;
+  }
+
+  @include media(desktop) {
+    background: url('/img/background/background-desk.jpg') repeat center;
+  }
+}
+
+main {
+  padding-top: 104px;
 }
 
 .container {
