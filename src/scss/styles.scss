@@ -43,17 +43,17 @@ body {
 
   @include media(mobile) {
     background: linear-gradient(
-        rgba(233, 242, 255, 0.5),
-        rgba(233, 242, 255, 0.5)
+        rgba(233, 242, 255, 0.7),
+        rgba(233, 242, 255, 0.7)
       ),
-      url(/img/background/background-mob.jpg) rgba(233, 242, 255, 0.5) repeat
+      url(/img/background/background-mob.jpg) rgba(233, 242, 255, 0.7) repeat
         center;
   }
 
   @include media(desktop) {
     background: linear-gradient(
-        rgba(233, 242, 255, 0.5),
-        rgba(233, 242, 255, 0.5)
+        rgba(233, 242, 255, 0.7),
+        rgba(233, 242, 255, 0.7)
       ),
       url(/img/background/background-desk.jpg) repeat center;
   }
@@ -62,8 +62,8 @@ body {
 @media screen and (min-resolution: 192dpi) {
   body {
     background: linear-gradient(
-        rgba(233, 242, 255, 0.5),
-        rgba(233, 242, 255, 0.5)
+        rgba(233, 242, 255, 0.7),
+        rgba(233, 242, 255, 0.7)
       ),
       url(/img/background/background-mob-2x.jpg);
   }
