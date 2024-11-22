@@ -42,7 +42,12 @@ body {
   height: 2500px;
 
   @include media(mobile) {
-    background: url('/img/background/background-mob.jpg') repeat center;
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.5),
+        rgba(233, 242, 255, 0.5)
+      ),
+      url('/img/background/background-mob.jpg') rgba(233, 242, 255, 0.5) repeat
+        center;
   }
 
   @include media(desktop) {
