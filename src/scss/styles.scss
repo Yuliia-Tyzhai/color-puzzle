@@ -46,15 +46,39 @@ body {
         rgba(233, 242, 255, 0.5),
         rgba(233, 242, 255, 0.5)
       ),
-      url('/img/background/background-mob.jpg') rgba(233, 242, 255, 0.5) repeat
+      url(/img/background/background-mob.jpg) rgba(233, 242, 255, 0.5) repeat
         center;
   }
 
   @include media(desktop) {
-    background: url('/img/background/background-desk.jpg') repeat center;
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.5),
+        rgba(233, 242, 255, 0.5)
+      ),
+      url(/img/background/background-desk.jpg) repeat center;
   }
 }
 
+@media screen and (min-resolution: 192dpi) {
+  body {
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.5),
+        rgba(233, 242, 255, 0.5)
+      ),
+      url(/img/background/background-mob-2x.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .order-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(233, 242, 255, 0.5),
+        rgba(233, 242, 255, 0.5)
+      ),
+      url(/img/background/background-desk-2x.jpg);
+  }
+}
 main {
   padding-top: 104px;
 }
