@@ -1,18 +1,88 @@
-@import './header.scss';
-@import './vite-promo.scss';
+// @import './header.scss';
+@import './header.css';
+@import './hero.css';
+@import './gallery.css';
+@import './unique-features.css';
+@import './about-the-game.css';
+@import './faq.css';
+@import './footer.css';
+@import './privacy-policy.css';
+@import './terms&conditions.css';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+// :root {
+//   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+//   font-size: 16px;
+//   line-height: 24px;
+//   font-weight: 400;
+
+//   color: #242424;
+//   background-color: rgba(255, 255, 255, 0.87);
+
+//   font-synthesis: none;
+//   text-rendering: optimizeLegibility;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-text-size-adjust: 100%;
+// }
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+}
+
+body {
+  font-family: 'Azeret Mono', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #020202;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.title {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  text-transform: uppercase;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+button {
+  cursor: pointer;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 72px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 32px;
+  }
 }
