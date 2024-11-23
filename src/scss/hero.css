@@ -1,9 +1,9 @@
-.hero-section {
-}
-.hero-container {
+.hero-container.container {
   position: relative;
   padding-top: 56px;
   padding-bottom: 66px;
+  padding-top: 172px;
+  padding-bottom: 133px;
 }
 .hero-title {
   font-weight: 700;
@@ -18,10 +18,10 @@
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: -3px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .hero-container span:not(:last-child):hover {
-  transform: translateY(-20px);
+  transform: translateY(-30px);
 }
 .pink {
   color: #ec7ef5;

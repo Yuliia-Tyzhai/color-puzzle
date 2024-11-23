@@ -40,6 +40,8 @@ main {
 
 .background {
   background-color: $_main_bg_color;
+  border-right: 1px solid #020202;
+  border-left: 1px solid #020202;
 
   @include media(mobile) {
     background: linear-gradient(
@@ -126,5 +128,6 @@ ul {
   .title {
     font-weight: 600;
     font-size: 32px;
+    padding: 12px 50px;
   }
 }
