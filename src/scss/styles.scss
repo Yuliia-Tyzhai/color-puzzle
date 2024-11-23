@@ -131,3 +131,21 @@ ul {
     padding: 12px 50px;
   }
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #020202;
+  background: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+
+.back-btn {
+  fill: transparent;
+  stroke: #020202;
+  margin-right: 8px;
+}
