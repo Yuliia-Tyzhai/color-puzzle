@@ -1,0 +1,86 @@
+.about-the-game-container {
+  background-image: url(/img/about-the-game/Picture-min.png);
+  background-repeat: no-repeat;
+  background-size: 170px 177px;
+  background-position: left calc(50%) top 240px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (min-resolution: 192dpi) {
+  .about-the-game-container {
+    background-image: url(/img/about-the-game/Picture@2x-min.png);
+    background-size: 170px 177px;
+    background-position: right calc(50%) top 240px;
+  }
+}
+
+.about-the-game-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #020202;
+  padding: 12px 16px;
+  background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+.part-one {
+  margin-bottom: 225px;
+}
+
+.part-two {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-the-game-container {
+    background-image: url(/img/about-the-game/Picture-min.png);
+    background-repeat: no-repeat;
+    background-size: 334px 349px;
+    background-position: left calc(50% + 400px) top 150px;
+    flex-direction: column;
+  }
+
+  .about-the-game-title {
+    padding: 12px 50px;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .about-the-game-text {
+    width: 715px;
+    height: 320px;
+  }
+
+  .part-one {
+    margin-bottom: 0;
+  }
+
+  .part-two {
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .about-the-game-container {
+    background-image: url(/img/about-the-game/Picture@2x-min.png);
+    background-repeat: no-repeat;
+    background-size: 334px 349px;
+    background-position: left calc(50% + 400px) top 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .our-collection {
+    background-image: url(/img/our-collection/background/elements@2x[1]-min.png);
+    background-repeat: no-repeat;
+    background-size: 334px 349px;
+    background-position: right calc(50% + 384px) top 70px;
+  }
+}
