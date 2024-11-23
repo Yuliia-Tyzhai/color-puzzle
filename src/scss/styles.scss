@@ -11,22 +11,6 @@
 // Імпорт стилів Swiper
 @import 'swiper/swiper-bundle.css';
 
-// :root {
-//   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-//   font-size: 16px;
-//   line-height: 24px;
-//   font-weight: 400;
-
-//   color: #242424;
-//   background-color: rgba(255, 255, 255, 0.87);
-
-//   font-synthesis: none;
-//   text-rendering: optimizeLegibility;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-text-size-adjust: 100%;
-// }
-
 html {
   scroll-behavior: smooth;
 }
@@ -41,48 +25,10 @@ body {
   font-size: 12px;
   line-height: 1.5;
   color: #020202;
-  height: 2500px;
-
-  @include media(mobile) {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgba(233, 242, 255, 0.7)
-      ),
-      url(/img/background/background-mob.jpg) rgba(233, 242, 255, 0.7) repeat
-        center;
-  }
-
-  @include media(desktop) {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgba(233, 242, 255, 0.7)
-      ),
-      url(/img/background/background-desk.jpg) repeat center;
-  }
 }
 
-@media screen and (min-resolution: 192dpi) {
-  body {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgba(233, 242, 255, 0.7)
-      ),
-      url(/img/background/background-mob-2x.jpg);
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
-  .order-section {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(233, 242, 255, 0.5),
-        rgba(233, 242, 255, 0.5)
-      ),
-      url(/img/background/background-desk-2x.jpg);
-  }
-}
 main {
-  padding-top: 104px;
+  padding-top: 105px;
 }
 
 .container {
@@ -90,6 +36,54 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.background {
+  background-color: $_main_bg_color;
+
+  @include media(mobile) {
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.7),
+        rgb(233, 242, 255, 0.7)
+      ),
+      url('/img/background/background-mobile@1x.jpg') repeat-y center;
+    background-size: cover;
+    background-position: 14px -10px;
+  }
+
+  @include media(desktop) {
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.7),
+        rgb(233, 242, 255, 0.7)
+      ),
+      url('/img/background/background-desk@1x.jpg') repeat-y center;
+    background-size: cover;
+    background-position: 14px -14px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .background {
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.7),
+        rgba(233, 242, 255, 0.7)
+      ),
+      url(/img/background/background-mobile@2x.jpg) repeat-y center;
+    background-size: cover;
+    background-position: 14px -10px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .background {
+    background: linear-gradient(
+        rgba(233, 242, 255, 0.7),
+        rgba(233, 242, 255, 0.7)
+      ),
+      url('../img/background/background-desk@2x.jpg') repeat-y center;
+    background-size: cover;
+    background-position: 14px -14px;
+  }
 }
 
 .title {
