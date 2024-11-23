@@ -1,4 +1,7 @@
 .hero-section {
+}
+.hero-container {
+  position: relative;
   padding-top: 56px;
   padding-bottom: 66px;
 }
@@ -90,9 +93,19 @@
   text-align: right;
   padding-left: 38px;
 }
+.hero-man {
+  position: absolute;
+  bottom: 220px;
+  right: 20px;
+}
+.hero4 {
+  position: absolute;
+  bottom: 7px;
+  left: 16px;
+}
 
 @media screen and (min-width: 1200px) {
-  .hero-section {
+  .hero-section .hero-container {
     padding-top: 172px;
     padding-bottom: 133px;
   }
@@ -135,5 +148,17 @@
   }
   .hero-text {
     margin-left: 404px;
+  }
+  .hero-man {
+    width: 56px;
+    height: 67px;
+    top: 330px;
+    right: 88px;
+  }
+  .hero4 {
+    width: 139px;
+    height: 61px;
+    bottom: 21px;
+    left: 271px;
   }
 }
