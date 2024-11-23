@@ -1,5 +1,5 @@
 .about-the-game-container {
-  background-image: url(/img/about-the-game/Picture-min.png);
+  background-image: url(/img/about-the-game/about-min-mob.png);
   background-repeat: no-repeat;
   background-size: 170px 177px;
   background-position: left calc(50%) top 240px;
@@ -11,7 +11,7 @@
 
 @media (min-resolution: 192dpi) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/Picture@2x-min.png);
+    background-image: url(/img/about-the-game/about@2x-min-mob.png);
     background-size: 170px 177px;
     background-position: right calc(50%) top 240px;
   }
@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 1200px) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/Picture-min.png);
+    background-image: url(/img/about-the-game/about-min-desk.png);
     background-repeat: no-repeat;
     background-size: 334px 349px;
     background-position: left calc(50% + 400px) top 150px;
@@ -69,18 +69,9 @@
 
 @media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/Picture@2x-min.png);
+    background-image: url(../img/about-the-game/about@2x-min-desk.png);
     background-repeat: no-repeat;
     background-size: 334px 349px;
     background-position: left calc(50% + 400px) top 70px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .our-collection {
-    background-image: url(/img/our-collection/background/elements@2x[1]-min.png);
-    background-repeat: no-repeat;
-    background-size: 334px 349px;
-    background-position: right calc(50% + 384px) top 70px;
   }
 }

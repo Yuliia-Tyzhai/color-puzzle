@@ -1,11 +1,13 @@
+/* Контейнер галереї */
 .gallery-container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: row;
-  gap: 24px;
+  flex-direction: column;
+  gap: 176px;
 }
 
+/* Заголовок галереї */
 .gallery-title {
   display: flex;
   align-items: center;
@@ -17,49 +19,95 @@
   background: #fff;
 }
 
-.gallery-swiper-container {
-  width: 100%;
-  height: 400px;
+/* Контейнер слайдера */
+.swiper {
   position: relative;
+  width: 100%;
+  height: auto;
+  overflow: visible; /* Забезпечуємо, щоб слайди не обрізалися */
 }
 
-.gallery-swiper-wrapper {
+/* Обгортка слайдів */
+.swiper-wrapper {
   display: flex;
+  align-items: center; /* Центруємо слайди по вертикалі */
+  overflow: visible; /* Забезпечуємо, щоб слайди не обрізалися */
 }
 
-.gallery-swiper-slide {
+/* Слайди */
+.swiper-slide {
+  display: flex;
+  align-items: center; /* Центруємо слайд по вертикалі */
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  opacity: 0.6; /* Неактивні слайди менш помітні */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Плавна анімація */
+  transform: translateY(0); /* Для інших слайдів без зміщення */
+  height: auto; /* Висота слайда автоматично змінюється */
+  padding: 56px 0;
+}
+
+/* Зображення в слайді */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Активний слайд */
+.swiper-slide-active {
+  opacity: 1; /* Збільшуємо прозорість для активного слайда */
+  z-index: 2; /* Піднімаємо активний слайд */
+  transform: translateY(-56px); /* Піднімаємо активний слайд на 56px */
+}
+
+/* Активне зображення */
+.swiper-slide-active img {
+  transform: scale(1); /* Зберігаємо оригінальний розмір зображення */
+  opacity: 1; /* Активне зображення буде чітким */
+}
+
+/* Попередній слайд */
+.swiper-slide-prev {
+  opacity: 0.5; /* Попередній слайд стає менш помітним */
+  transform: translateY(56px); /* Опускаємо попередній слайд вниз на 56px */
+  z-index: 1; /* Встановлюємо попередньому слайду нижчий рівень */
+}
+
+/* Наступний слайд */
+.swiper-slide-next {
+  opacity: 0.5; /* Наступний слайд буде менш помітним */
+  transform: translateY(56px); /* Опускаємо наступний слайд вниз на 56px */
+  z-index: 1; /* Встановлюємо наступному слайду нижчий рівень */
+}
+
+/* Стилі для кнопок */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); /* Прозоре тло */
+  border-radius: 50%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  transition: transform 0.3s ease, z-index 0.3s ease;
 }
 
-.gallery-swiper-slide img {
+/* Кастомні іконки в кнопках */
+.swiper-button-prev use,
+.swiper-button-next use {
+  fill: #fff; /* Колір іконок */
+  width: 24px; /* Розмір іконок */
+  height: 24px;
+}
+
+/* Стилі для зображень в слайді */
+.swiper-slide img {
   width: 100%;
   height: auto;
-}
-
-.gallery-swiper-slide.swiper-slide-active {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-.gallery-swiper-button-next,
-.gallery-swiper-button-prev {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  z-index: 20;
-}
-
-.gallery-swiper-button-next {
-  right: 10px;
-}
-
-.gallery-swiper-button-prev {
-  right: 50px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
