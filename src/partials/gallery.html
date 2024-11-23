@@ -1,28 +1,90 @@
 <section class="section gallery-section" id="gallery">
-  <div class="container gallery-container">
+  <div class="container gallery-container background">
     <h2 class="title gallery-title">Gallery</h2>
     <div class="gallery-swiper-container swiper">
-      <div class="gallery-swiper-controll-buttons">
-        <div class="gallery-swiper-button-prev">
-          <button class="gallery-swiper-button" type="button">prev</button>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture
+            ><source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallery/gallery-1-desk-min.png    1x,
+                /img/gallery/gallery-1-desk@2x-min.png 2x
+              "
+            />
+            <img
+              class="gallery-img"
+              src="/img/gallery/gallery-1-desk-min.png"
+              alt="image1"
+              width="306"
+              height="542"
+            />
+          </picture>
         </div>
-        <div class="gallery-swiper-button-next">
-          <button class="gallery-swiper-button" type="button">next</button>
+        <div class="swiper-slide">
+          <picture
+            ><source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallery/gallery-2-desk-min.png    1x,
+                /img/gallery/gallery-2-desk@2x-min.png 2x
+              "
+            />
+            <img
+              class="gallery-img"
+              src="/img/gallery/gallery-2-desk-min.png"
+              alt="image1"
+              width="306"
+              height="542"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture
+            ><source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallery/gallery-3-desk-min.png    1x,
+                /img/gallery/gallery-3-desk@2x-min.png 2x
+              "
+            />
+            <img
+              class="gallery-img"
+              src="/img/gallery/gallery-3-desk-min.png"
+              alt="image1"
+              width="306"
+              height="542"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture
+            ><source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/gallery/gallery-4-desk-min.png    1x,
+                /img/gallery/gallery-4-desk@2x-min.png 2x
+              "
+            />
+            <img
+              class="gallery-img"
+              src="/img/gallery/gallery-4-desk-min.png"
+              alt="image1"
+              width="306"
+              height="542"
+            />
+          </picture>
         </div>
       </div>
-      <div class="gallery-swiper-wrapper">
-        <div class="gallery-swiper-slide">
-          <img src="/img/gallery/level73-min.png" alt="Image 1" />
-        </div>
-        <div class="gallery-swiper-slide">
-          <img src="/img/gallery/level95-min.png" alt="Image 2" />
-        </div>
-        <div class="gallery-swiper-slide">
-          <img src="/img/gallery/level3-min.png" alt="Image 3" />
-        </div>
-        <div class="gallery-swiper-slide">
-          <img src="/img/gallery/level8-min.png" alt="Image 4" />
-        </div>
+      <div class="swiper-button-prev">
+        <svg class="gallery-swiper-button" width="32" height="32">
+          <use href="/img/sprite1.svg#icon-Left-Arrow-Icon"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="gallery-swiper-button" width="32" height="32">
+          <use href="/img/sprite1.svg#icon-Right-Arrow-Icon"></use>
+        </svg>
       </div>
     </div>
   </div>
