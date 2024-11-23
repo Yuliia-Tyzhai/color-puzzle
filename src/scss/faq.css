@@ -1,3 +1,9 @@
+.faq-container {
+  background-image: url('../img/background/icons/faq-ray.svg');
+  background-repeat: no-repeat; /* Запобігає повторенню SVG */
+  background-size: contain; /* Масштабує SVG, щоб покрити весь фон */
+  background-position: center;
+}
 .faq-container.container {
   position: relative;
   padding-top: 46px;
@@ -92,6 +98,8 @@
     font-size: 20px;
   }
   .faq-acc-svg {
+    fill: transparent;
+    stroke: black;
     top: 4px;
   }
   .faq-answer-text {
@@ -104,6 +112,8 @@
     display: inline-block;
     position: absolute;
     top: 48px;
+    fill: transparent;
+    stroke: red;
   }
   .faq-man {
     width: 64px;
