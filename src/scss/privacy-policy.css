@@ -5,6 +5,7 @@
 }
 .privacy-background-img {
   position: absolute;
+  z-index: 1;
   inset: 0;
   background: url('../img/background/icons/privacy-man.svg') no-repeat top
       123.49px right 33.99px,
@@ -14,6 +15,12 @@
 }
 .back-link {
   margin-bottom: 88px;
+  position: relative;
+  z-index: 2;
+}
+.privacy-container {
+  position: relative;
+  z-index: 2;
 }
 .privacy-container:not(:last-child) {
   margin-bottom: 56px;
