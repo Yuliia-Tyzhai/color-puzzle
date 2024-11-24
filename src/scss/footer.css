@@ -3,11 +3,11 @@
   background: #fff;
   border: 1px solid #020202;
 }
-.privacy-list {
+.terms-list {
   padding-bottom: 32px;
   font-weight: 400;
 }
-.privacy-item:not(:last-child) {
+.terms-item:not(:last-child) {
   padding-bottom: 8px;
 }
 .footer-text {
@@ -40,7 +40,7 @@
     width: 1px;
   }
 
-  .privacy-list {
+  .terms-list {
     display: flex;
     padding-inline: 69px;
     padding-bottom: 0;
@@ -49,7 +49,7 @@
     font-size: 14px;
     align-items: center;
   }
-  .privacy-item:first-child {
+  .terms-item:first-child {
     padding-bottom: 0;
   }
   .slash {
