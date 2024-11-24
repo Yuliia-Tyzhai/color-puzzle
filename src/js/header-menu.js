@@ -43,7 +43,8 @@ navMobLinks.forEach(link => {
   });
 });
 
-// ================FAQ section
+// // ================FAQ section
+
 // document.addEventListener('DOMContentLoaded', () => {
 //   const accordionButtons = document.querySelectorAll('.faq-question-text');
 
