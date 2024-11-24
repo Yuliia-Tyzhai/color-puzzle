@@ -44,48 +44,54 @@ main {
   border-left: 1px solid #020202;
 
   @include media(mobile) {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgb(233, 242, 255, 0.7)
-      ),
-      url('/img/background/background-mobile@1x.jpg') repeat-y center;
-    background-size: cover;
-    background-position: 14px -10px;
+    // background-image: url('/img/background/substrate-mob@2x.png');
+    // // background-repeat: repeat-y;
+    // background-position: center;
+    // background-size: contain;
+
+    //background: linear-gradient(
+    //     rgba(233, 242, 255, 0.7),
+    //     rgb(233, 242, 255, 0.7)
+    //   ),
+    //   url('/img/background/background-mobile@1x.jpg') repeat-y center;
+    // background-size: cover;
+    // background-position: 14px -10px;
   }
 
   @include media(desktop) {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgb(233, 242, 255, 0.7)
-      ),
-      url('/img/background/background-desk@1x.jpg') repeat-y center;
-    background-size: cover;
-    background-position: 14px -14px;
+    //   background: linear-gradient(
+    //       rgba(233, 242, 255, 0.7),
+    //       rgb(233, 242, 255, 0.7)
+    //     ),
+    //     url('/img/background/background-desk@1x.jpg') repeat-y center;
+    //   background-size: cover;
+    //   background-position: 14px -14px;
+    // }
   }
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .background {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgba(233, 242, 255, 0.7)
-      ),
-      url(/img/background/background-mobile@2x.jpg) repeat-y center;
-    background-size: cover;
-    background-position: 14px -10px;
-  }
+  // .background {
+  //   background: linear-gradient(
+  //       rgba(233, 242, 255, 0.7),
+  //       rgba(233, 242, 255, 0.7)
+  //     ),
+  //     url(/img/background/background-mobile@2x.jpg) repeat-y center;
+  //   background-size: cover;
+  //   background-position: 14px -10px;
+  // }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
-  .background {
-    background: linear-gradient(
-        rgba(233, 242, 255, 0.7),
-        rgba(233, 242, 255, 0.7)
-      ),
-      url('../img/background/background-desk@2x.jpg') repeat-y center;
-    background-size: cover;
-    background-position: 14px -14px;
-  }
+  // .background {
+  //   background: linear-gradient(
+  //       rgba(233, 242, 255, 0.7),
+  //       rgba(233, 242, 255, 0.7)
+  //     ),
+  //     url('../img/background/background-desk@2x.jpg') repeat-y center;
+  //   background-size: cover;
+  //   background-position: 14px -14px;
+  // }
 }
 
 .title {
