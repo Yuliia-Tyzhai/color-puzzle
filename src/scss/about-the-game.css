@@ -1,8 +1,11 @@
 .about-the-game-container {
-  background-image: url(/img/about-the-game/about-min-mob.png);
+  background-image: url('/img/background/background-mobile@1x.jpg'),
+    url('/img/about-the-game/about-min-mob.png');
+
   background-repeat: no-repeat;
-  background-size: 170px 177px;
-  background-position: left calc(50%) top 240px;
+  background-size: cover, 170px 177px;
+  background-position: center center, left calc(50%) top 290px;
+
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -11,9 +14,10 @@
 
 @media (min-resolution: 192dpi) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/about@2x-min-mob.png);
-    background-size: 170px 177px;
-    background-position: right calc(50%) top 240px;
+    background-image: url('/img/background/background-mobile@2x.jpg'),
+      url('/img/about-the-game/about@2x-min-mob.png');
+    background-size: cover, 170px 177px;
+    background-position: center center, right calc(50%) top 290px;
   }
 }
 
@@ -40,10 +44,11 @@
 
 @media screen and (min-width: 1200px) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/about-min-desk.png);
+    background-image: url('/img/background/background-desk@1x.jpg'),
+      url('/img/about-the-game/about-min-desk.png');
     background-repeat: no-repeat;
-    background-size: 334px 349px;
-    background-position: left calc(50% + 400px) top 150px;
+    background-size: cover, 334px 349px;
+    background-position: center center, left calc(50% + 400px) top 70px;
     flex-direction: column;
   }
 
@@ -69,9 +74,10 @@
 
 @media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
   .about-the-game-container {
-    background-image: url(/img/about-the-game/about@2x-min-desk.png);
+    background-image: url('/img/background/background-desk@2x.jpg'),
+      url('/img/about-the-game/about@2x-min-desk.png');
     background-repeat: no-repeat;
-    background-size: 334px 349px;
-    background-position: left calc(50% + 400px) top 70px;
+    background-size: cover, 334px 349px;
+    background-position: center center, left calc(50% + 400px) top 70px;
   }
 }
