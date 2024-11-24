@@ -1,83 +1,72 @@
 .about-the-game-container {
-  background-image: url('/img/background/background-mobile@1x.jpg'),
-    url('/img/about-the-game/about-min-mob.png');
-
-  background-repeat: no-repeat;
-  background-size: cover, 170px 177px;
-  background-position: center center, left calc(50%) top 290px;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  position: relative;
 }
-
-@media (min-resolution: 192dpi) {
-  .about-the-game-container {
-    background-image: url('/img/background/background-mobile@2x.jpg'),
-      url('/img/about-the-game/about@2x-min-mob.png');
-    background-size: cover, 170px 177px;
-    background-position: center center, right calc(50%) top 290px;
-  }
+.about-background-img {
+  position: absolute;
+  inset: 0;
+  background: url('/img/background/icons/about-zigzag-mob.svg') no-repeat top
+      4px left 18px / 288px 20px,
+    url('/img/background/icons/about-title-mob.svg') no-repeat top 54px left 4px /
+      203.58px 68px,
+    url('/img/background/icons/about-arrows-mob.svg') no-repeat top 312.68px
+      left 139.55px / 82.33px 115.77px,
+    url('/img/background/icons/about-line-mob.svg') no-repeat bottom left 130px /
+      92px 24px;
 }
-
 .about-the-game-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  border: 1px solid #020202;
-  padding: 12px 16px;
-  background-color: #fff;
-  margin-top: 40px;
   margin-bottom: 56px;
 }
-
+.about-the-game-text {
+  height: 495px;
+  display: flex;
+  flex-direction: column;
+}
 .part-one {
-  margin-bottom: 225px;
+  margin-bottom: auto;
 }
-
-.part-two {
-  margin-bottom: 40px;
+.about-picture {
+  position: absolute;
+  top: 319px;
+  left: 75px;
 }
-
 @media screen and (min-width: 1200px) {
-  .about-the-game-container {
-    background-image: url('/img/background/background-desk@1x.jpg'),
-      url('/img/about-the-game/about-min-desk.png');
-    background-repeat: no-repeat;
-    background-size: cover, 334px 349px;
-    background-position: center center, left calc(50% + 400px) top 70px;
-    flex-direction: column;
+  .about-the-game-container.container {
+    padding-top: 96px;
+    padding-bottom: 160px;
   }
-
-  .about-the-game-title {
-    padding: 12px 50px;
-    font-weight: 600;
-    font-size: 32px;
-  }
-
   .about-the-game-text {
-    width: 715px;
-    height: 320px;
+    display: block;
+    padding-right: 341px;
+    height: auto;
   }
-
-  .part-one {
-    margin-bottom: 0;
-  }
-
+  .part-one,
   .part-two {
-    margin-bottom: 160px;
+    display: inline;
   }
-}
-
-@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
-  .about-the-game-container {
-    background-image: url('/img/background/background-desk@2x.jpg'),
-      url('/img/about-the-game/about@2x-min-desk.png');
-    background-repeat: no-repeat;
-    background-size: cover, 334px 349px;
-    background-position: center center, left calc(50% + 400px) top 70px;
+  .absolut {
+    position: absolute;
+    top: 0;
+    left: 725px;
+  }
+  .about-picture {
+    top: 114px;
+    right: 64px;
+    width: 334px;
+    height: 349px;
+  }
+  .about-img {
+    width: auto;
+    height: auto;
+  }
+  .about-background-img {
+    background: url('../img/background/icons/about-zigzag-desk.svg') no-repeat
+        top left 43px / 1134px 33px,
+      url('../img/background/icons/about-title-mob.svg') no-repeat top left,
+      url(../img/background/icons/about-arrows-desk.svg) no-repeat top 94.94px
+        right 109.78px / 166.33px 230.76px,
+      url('../img/background/icons/about-line-desk.svg') no-repeat bottom
+        12.28px left 380.31px / 431.45px 115.95px;
   }
 }
