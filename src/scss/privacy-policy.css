@@ -1,0 +1,58 @@
+.privacy-container {
+  padding-top: 32px;
+  padding-bottom: 55px;
+}
+.back-link {
+  margin-bottom: 88px;
+}
+.privacy-title {
+  margin-bottom: 32px;
+}
+.privacy-text {
+  margin-bottom: 56px;
+}
+.privacy-list > li:not(:last-child) {
+  margin-bottom: 56px;
+}
+.privacy-container p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.inner-list {
+  font-weight: 300;
+  list-style-type: square;
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+.inner-list a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .privacy-container.container {
+    padding-top: 270px;
+    padding-bottom: 120px;
+  }
+  .privacy-title {
+    margin-bottom: 96px;
+  }
+  .privacy-container > .privacy-text {
+    margin-bottom: 96px;
+  }
+  .privacy-list > li:not(:last-child) {
+    margin-bottom: 96px;
+  }
+  .privacy-container p:not(:last-child) {
+    margin-bottom: 44px;
+  }
+  .inner-list {
+    list-style-type: square;
+    padding-left: 22px;
+    margin-bottom: 44px;
+  }
+  .inner-list a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
