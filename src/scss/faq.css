@@ -1,13 +1,24 @@
-.faq-container {
-  background-image: url('../img/background/icons/faq-ray.svg');
-  background-repeat: no-repeat; /* Запобігає повторенню SVG */
-  background-size: contain; /* Масштабує SVG, щоб покрити весь фон */
-  background-position: center;
-}
 .faq-container.container {
   position: relative;
   padding-top: 46px;
   padding-bottom: 62px;
+}
+.background-img {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: url('/img/background/icons/faq-rays-mob.svg') no-repeat top
+      23.59px left 2.86px,
+    url('/img/background/icons/faq-man-mob.svg') no-repeat top 62px right
+      54.58px,
+    url('/img/background/icons/faq-ques-mob.svg') no-repeat top 39px right
+      33.29px;
+  background-size: 104.09px 92.17px, 20.42px 41.34px, 35.06px 23.32px;
+}
+.faq-title,
+.faq-list {
+  position: relative;
+  z-index: 2;
 }
 .faq-list {
   margin-top: 56px;
@@ -18,8 +29,6 @@
   padding: 32px 24px;
   background: #fff;
 }
-/* box-shadow: 4px 4px 0 0 #8a9ace; */
-
 .faq-item:not(:last-child) {
   margin-bottom: 23px;
 }
@@ -39,6 +48,9 @@
   position: absolute;
   top: 9px;
   right: 0;
+  fill: transparent;
+  stroke: black;
+  padding: 8.75px 5.25px 10.05px 5.25px;
 }
 .faq-answer {
   position: relative;
@@ -47,13 +59,6 @@
   font-weight: 300;
   font-size: 12px;
   padding-top: 96px;
-}
-.faq-divider {
-  position: absolute;
-  top: 48px;
-}
-.faq-divider-desktop {
-  display: none;
 }
 .faq-answer {
   max-height: 0;
@@ -65,29 +70,28 @@
 }
 .open {
   box-shadow: 4px 4px 0 0 #8a9ace;
-}
-.faq-man,
-.faq-ques,
-.faq-ray {
-  position: absolute;
-}
-.faq-man {
-  top: 62px;
-  right: 54px;
-}
-.faq-ques {
-  top: 39px;
-  right: 33px;
-}
-.faq-ray {
-  top: 0;
-  left: 0;
+  background: #fff url('/img/background/icons/faq-divider-mob.svg') no-repeat;
+  background-position: 24px calc(50% - 2px), calc(100% - 24px);
+  transition: 
+  /* background 0.3s ease, background-position 0.3s ease, */ box-shadow
+    0.3s ease;
 }
 
 @media screen and (min-width: 1200px) {
   .faq-container.container {
     padding-top: 96px;
     padding-bottom: 93px;
+  }
+  .background-img {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    background: url('/img/background/icons/faq-rays.svg') no-repeat top 36px
+        left 20px,
+      url('/img/background/icons/faq-man.svg') no-repeat top 96px right 257.72px,
+      url('/img/background/icons/faq-ques.svg') no-repeat top 40.39px right
+        185.56px;
+    background-size: 284.63px 192.56px, 63.28px 119.87px, 101.66px 67.62px;
   }
   .faq-list {
     margin-top: 120px;
@@ -98,37 +102,14 @@
     font-size: 20px;
   }
   .faq-acc-svg {
-    fill: transparent;
-    stroke: black;
     top: 4px;
   }
   .faq-answer-text {
     font-size: 16px;
   }
-  .faq-divider {
-    display: none;
-  }
-  .faq-divider-desktop {
-    display: inline-block;
-    position: absolute;
-    top: 48px;
-    fill: transparent;
-    stroke: red;
-  }
-  .faq-man {
-    width: 64px;
-    height: 120px;
-    top: 96px;
-    right: 258px;
-  }
-  .faq-ques {
-    width: 68px;
-    height: 102px;
-    top: 41px;
-    right: 186px;
-  }
-  .faq-ray {
-    width: 192px;
-    height: 285px;
+
+  .open {
+    background: #fff url('/img/background/icons/faq-divider-desk.svg') no-repeat;
+    background-position: 24px calc(50% + 5px), calc(100% - 24px);
   }
 }
