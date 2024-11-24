@@ -1,58 +1,67 @@
-.privacy-container {
+.privacy-main-container {
   padding-top: 32px;
   padding-bottom: 55px;
+  position: relative;
+}
+.privacy-background-img {
+  position: absolute;
+  inset: 0;
+  background: url('../img/background/icons/privacy-man.svg') no-repeat top
+      123.49px right 33.99px,
+    url('../img/background/icons/privacy-symb.svg') no-repeat top 104px right
+      34.21px;
+  background-size: 24.05px 42.09px, 25.79px 15.73px;
 }
 .back-link {
   margin-bottom: 88px;
 }
+.privacy-container:not(:last-child) {
+  margin-bottom: 56px;
+}
 .privacy-title {
   margin-bottom: 32px;
 }
-.privacy-text {
-  margin-bottom: 56px;
-}
-.privacy-list > li:not(:last-child) {
-  margin-bottom: 56px;
-}
-.privacy-container p {
+.privacy-container p,
+.privacy-container h4 {
   font-weight: 300;
   margin-bottom: 20px;
 }
 .inner-list {
   font-weight: 300;
   list-style-type: square;
-  padding-left: 16px;
   margin-bottom: 20px;
+  padding-left: 16px;
 }
-.inner-list a {
+.privacy-inner-list a {
   text-decoration: underline;
   cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
-  .privacy-container.container {
+  .privacy-main-container.container {
     padding-top: 270px;
     padding-bottom: 120px;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .privacy-background-img {
+    background-size: 80px 140px, 85.79px 52.34px;
+    background-position: top 165.82px right 308.83px, top 101px right 306.21px;
+  }
+  .privacy-container:not(:last-child) {
+    margin-bottom: 96px;
   }
   .privacy-title {
     margin-bottom: 96px;
   }
-  .privacy-container > .privacy-text {
-    margin-bottom: 96px;
-  }
-  .privacy-list > li:not(:last-child) {
-    margin-bottom: 96px;
-  }
-  .privacy-container p:not(:last-child) {
+  .privacy-inner-list {
+    list-style-type: square;
     margin-bottom: 44px;
   }
   .inner-list {
-    list-style-type: square;
     padding-left: 22px;
-    margin-bottom: 44px;
   }
-  .inner-list a {
-    text-decoration: underline;
-    cursor: pointer;
+  .privacy-container p:not(:last-child) {
+    margin-bottom: 44px;
   }
 }
