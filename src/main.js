@@ -4,3 +4,4 @@ import 'swiper/css';
 import './js/header-menu';
 import './js/gallery';
 import './js/unique-features';
+import './js/faq'
