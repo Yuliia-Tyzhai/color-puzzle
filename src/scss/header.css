@@ -1,10 +1,10 @@
-.header {
+header {
   position: fixed;
   inset: 0;
-  height: 105px;
+  height: 103px;
   z-index: 9;
 }
-.header .header-container {
+header .header-container {
   border: 1px solid #020202;
   background: #fff;
   padding: 0;
@@ -12,27 +12,26 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 32px;
+  position: relative;
+}
+.header-background-img {
+  position: absolute;
+  inset: 0;
+  background: url('/img/background/icons/header-logo-back.svg') no-repeat top
+    9px left 33px;
+  background-size: 93.41px 85.96px;
 }
 .logo-container {
   padding: 16px 44px;
   border-right: 1px solid #020202;
-  position: relative;
 }
 .logo-image {
   width: 72px;
   height: 72px;
 }
-.logo-svg {
-  position: absolute;
-  top: 9px;
-  left: 33px;
-}
 .burger-menu {
   display: block;
   cursor: pointer;
-}
-.header-line {
-  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -45,28 +44,25 @@
   .burger-menu {
     display: none;
   }
+  header .header-container {
+    padding-inline: 72px;
+  }
+  .header-background-img {
+    background: url('/img/background/icons/header-logo-back.svg') no-repeat top
+        7.97px left 60.95px,
+      url('/img/background/icons/header-divider.svg') no-repeat top 70px right;
+    background-size: 93.41px 85.96px, 963.34px 5.76px;
+  }
   .logo-container {
-    padding-inline: 72px 62px;
-  }
-  .logo-svg {
-    left: 61px;
-  }
-  .nav-menu {
-    position: relative;
+    padding-inline: 0 62px;
   }
   .nav-list {
     display: flex;
-    padding: 25px 72px;
+    justify-content: end;
     gap: 40px;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
-  }
-  .header-line {
-    display: inline-block;
-    position: absolute;
-    top: 37px;
-    left: -137px;
   }
 }
 
