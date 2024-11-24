@@ -87,7 +87,7 @@ header .header-container {
   transform: translateX(0);
 }
 .mob-menu.is-closing {
-  transform: translateX(100%); /* Анімація повернення */
+  transform: translateX(100%);
   transition: transform 0.3s ease-in-out; /* Ефект анімації для закриття */
 }
 .mob-menu {
@@ -100,17 +100,19 @@ header .header-container {
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 10;
-  background-color: #e9f2ff;
+}
+.mobile-background-img {
+  position: absolute;
+  inset: 0;
+  background: url('/img/background/icons/mobile-man.svg') no-repeat bottom
+      101.39px left 128px / 63.93px 77.61px,
+    url('/img/background/icons/mobile-splash.svg') no-repeat bottom 125.83px
+      left 28px / 236.88px 132.17px;
 }
 .menu-container {
   position: relative;
-  background: url(/img/background/background-mob.png),
-    linear-gradient(rgba(233, 242, 255, 0.5), rgba(233, 242, 255, 0.5)) repeat-y
-      center;
-  background-size: auto;
   padding: 56px 16px;
   height: 100vh;
-  /* min-height: 600px; */
 }
 .menu-close-btn {
   position: absolute;
@@ -118,10 +120,6 @@ header .header-container {
   right: 16px;
   border: none;
   background-color: transparent;
-}
-.close-icon {
-  width: 16px;
-  height: 18px;
 }
 .nav-list-mobile {
   display: flex;
@@ -131,18 +129,4 @@ header .header-container {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: #020202;
-}
-.men {
-  position: relative;
-  height: 77px;
-  width: 63px;
-  left: 105px;
-  bottom: -140px;
-}
-.slash {
-  position: absolute;
-  width: 236px;
-  height: 132px;
-  bottom: 130px;
 }
