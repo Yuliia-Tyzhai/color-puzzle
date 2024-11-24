@@ -61,12 +61,13 @@
     height: auto;
   }
   .about-background-img {
-    background: url('../img/background/icons/about-zigzag-desk.svg') no-repeat
-        top left 43px / 1134px 33px,
-      url('../img/background/icons/about-title-mob.svg') no-repeat top left,
-      url(../img/background/icons/about-arrows-desk.svg) no-repeat top 94.94px
+    background: url('/img/background/icons/about-zigzag-desk.svg') no-repeat top
+        left 43px / 1134px 33px,
+      url('../img/background/icons/about-title-desk.svg') no-repeat top 84.57px
+        left 58.77px / 419.61px 94.46px,
+      url('/img/background/icons/about-arrows-desk.svg') no-repeat top 94.94px
         right 109.78px / 166.33px 230.76px,
-      url('../img/background/icons/about-line-desk.svg') no-repeat bottom
-        12.28px left 380.31px / 431.45px 115.95px;
+      url('/img/background/icons/about-line-desk.svg') no-repeat bottom 12.28px
+        left 380.31px / 431.45px 115.95px;
   }
 }
