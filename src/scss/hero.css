@@ -2,27 +2,39 @@
   position: relative;
   padding-top: 56px;
   padding-bottom: 66px;
-  padding-top: 172px;
-  padding-bottom: 133px;
 }
+.hero-background-img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: url('/img/background/icons/hero-man.svg') no-repeat top 240.68px
+      right 19.21px,
+    url('../img/background/icons/hero-rope-mob.svg') no-repeat top right 16px,
+    url('../img/background/icons/hero-line-mob.svg') no-repeat bottom 7px left
+      28px,
+    url('../img/background/icons/hero-arrows-mob.svg') no-repeat bottom 153.87px
+      left 105.6px;
+  background-size: 28.79px 36.85px, 23px 259px, 63px 27px, 106.96px 37.13px;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
-  padding-right: 20px;
-  word-spacing: 14px;
 }
 .hero-container span {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
-  letter-spacing: -3px;
+  letter-spacing: -7.5px;
   transition: transform 0.3s ease-in-out;
 }
-.hero-container span:not(:last-child):hover {
+/* .hero-container .hover:hover {
   transform: translateY(-30px);
-}
+} */
 .pink {
   color: #ec7ef5;
 }
@@ -60,23 +72,22 @@
 }
 .google-btn {
   position: relative;
+  z-index: 2;
   margin-top: 40px;
-  margin-bottom: 57px;
+  margin-bottom: 57.31px;
   padding: 12px 16px;
   border: 1px solid #020202;
   width: 166px;
-  height: 54px;
+  height: 54.69px;
   background-color: #fff;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   display: flex;
   justify-content: space-between;
+  gap: 5px;
 }
 .google-btn:hover {
   box-shadow: 4px 4px 0 0 #8a9ace;
   transform: scale(1.05);
-}
-.google-btn img {
-  height: 29px;
 }
 .google-cont svg {
   display: block;
@@ -84,81 +95,70 @@
 .google-cont svg:first-child {
   margin-bottom: 4px;
 }
-.hero-arrows {
-  position: absolute;
-  bottom: -23px;
-  right: -33px;
-}
 .hero-text {
   text-align: right;
   padding-left: 38px;
 }
-.hero-man {
-  position: absolute;
-  bottom: 220px;
-  right: 20px;
-}
-.hero4 {
-  position: absolute;
-  bottom: 7px;
-  left: 16px;
-}
 
 @media screen and (min-width: 1200px) {
-  .hero-section .hero-container {
+  .hero-container.container {
     padding-top: 172px;
     padding-bottom: 133px;
+  }
+  .hero-background-img {
+    background: url('/img/background/icons/hero-man.svg') no-repeat top 310px
+        right 86.9px,
+      url('../img/background/icons/hero-rope-mob.svg') no-repeat top right
+        85.01px,
+      url('../img/background/icons/hero-line-mob.svg') no-repeat bottom 21px
+        left 271px,
+      url('../img/background/icons/hero-arrows-mob.svg') no-repeat bottom
+        264.35px left 114px;
+
+    background-size: 56.1px 76.66px, 23.02px 312.05px, 139px 61px,
+      419.85px 145.75px;
   }
   .hero-title {
     display: inline-block;
     font-weight: 700;
     font-size: 48px;
-    color: #000;
   }
   .hero-container span {
     font-weight: 700;
     font-size: 48px;
   }
+  .hero-container .hover:hover {
+    transform: translateY(-30px);
+  }
   .end-span {
     margin-left: 16px;
   }
   .google-btn {
-    padding-top: 40px;
-    padding-bottom: 12px;
+    margin-bottom: 0;
     width: 306px;
     height: 79px;
-    padding: 16px 50px;
+    padding: 16px 51px;
+    gap: 14.02px;
   }
   .google-btn img {
+    width: 41px;
     height: 44px;
   }
+  .google-cont svg:first-child {
+    margin-bottom: 6.7px;
+  }
   .get-it {
-    width: 69px;
-    height: 12px;
+    width: 68px;
+    height: 11px;
   }
   .google-play {
-    width: 150px;
-    height: 30px;
-  }
-  .hero-arrows {
-    width: 419px;
-    height: 145px;
-    bottom: -90px;
-    right: -155px;
+    width: 149px;
+    height: 29px;
   }
   .hero-text {
-    margin-left: 404px;
-  }
-  .hero-man {
-    width: 56px;
-    height: 67px;
-    top: 330px;
-    right: 88px;
-  }
-  .hero4 {
-    width: 139px;
-    height: 61px;
-    bottom: 21px;
-    left: 271px;
+    margin-top: 120px;
+    margin-left: 332px;
+    font-size: 24px;
+    text-align: right;
   }
 }
