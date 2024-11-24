@@ -1,13 +1,24 @@
-.faq-container {
-  background-image: url('../img/background/icons/faq-ray.svg');
-  background-repeat: no-repeat; /* Запобігає повторенню SVG */
-  background-size: contain; /* Масштабує SVG, щоб покрити весь фон */
-  background-position: center;
-}
 .faq-container.container {
   position: relative;
   padding-top: 46px;
   padding-bottom: 62px;
+}
+.background-img {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background: url('/img/background/icons/faq-rays-mob.svg') no-repeat top
+      23.59px left 2.86px,
+    url('/img/background/icons/faq-man-mob.svg') no-repeat top 62px right
+      54.58px,
+    url('/img/background/icons/faq-ques-mob.svg') no-repeat top 39px right
+      33.29px;
+  background-size: 104.09px 92.17px, 20.42px 41.34px, 35.06px 23.32px;
+}
+.faq-title,
+.faq-list {
+  position: relative;
+  z-index: 2;
 }
 .faq-list {
   margin-top: 56px;
@@ -49,13 +60,6 @@
   font-size: 12px;
   padding-top: 96px;
 }
-.faq-divider {
-  position: absolute;
-  top: 48px;
-}
-.faq-divider-desktop {
-  display: none;
-}
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -72,28 +76,22 @@
   /* background 0.3s ease, background-position 0.3s ease, */ box-shadow
     0.3s ease;
 }
-.faq-man,
-.faq-ques,
-.faq-ray {
-  position: absolute;
-}
-.faq-man {
-  top: 62px;
-  right: 54px;
-}
-.faq-ques {
-  top: 39px;
-  right: 33px;
-}
-.faq-ray {
-  top: 0;
-  left: 0;
-}
 
 @media screen and (min-width: 1200px) {
   .faq-container.container {
     padding-top: 96px;
     padding-bottom: 93px;
+  }
+  .background-img {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    background: url('/img/background/icons/faq-rays.svg') no-repeat top 36px
+        left 20px,
+      url('/img/background/icons/faq-man.svg') no-repeat top 96px right 257.72px,
+      url('/img/background/icons/faq-ques.svg') no-repeat top 40.39px right
+        185.56px;
+    background-size: 284.63px 192.56px, 63.28px 119.87px, 101.66px 67.62px;
   }
   .faq-list {
     margin-top: 120px;
@@ -109,34 +107,9 @@
   .faq-answer-text {
     font-size: 16px;
   }
-  /* .faq-divider {
-    display: none;
-  } */
+
   .open {
     background: #fff url('/img/background/icons/faq-divider-desk.svg') no-repeat;
     background-position: 24px calc(50% + 5px), calc(100% - 24px);
-  }
-  .faq-divider-desktop {
-    display: inline-block;
-    position: absolute;
-    top: 48px;
-    fill: transparent;
-    stroke: red;
-  }
-  .faq-man {
-    width: 64px;
-    height: 120px;
-    top: 96px;
-    right: 258px;
-  }
-  .faq-ques {
-    width: 68px;
-    height: 102px;
-    top: 41px;
-    right: 186px;
-  }
-  .faq-ray {
-    width: 192px;
-    height: 285px;
   }
 }
