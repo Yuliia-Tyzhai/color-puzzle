@@ -1,5 +1,4 @@
 .back-link {
-  margin-top: 32px;
   margin-bottom: 88px;
 }
 
@@ -9,8 +8,8 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 56px;
-  margin-top: 168px;
-  margin-bottom: 56px;
+  padding-top: 32px;
+  padding-bottom: 55px;
 }
 
 .terms-parts-container {
@@ -39,14 +38,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .back-link {
-    margin-top: 96px;
-    margin-bottom: 120px;
-  }
-
-  .terms-container {
+  .terms-container.container {
     gap: 96px;
-    margin-top: 270px;
+    padding-top: 270px;
+    padding-bottom: 120px;
   }
 
   .terms-parts-container {
