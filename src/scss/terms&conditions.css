@@ -21,7 +21,7 @@
     url('../img/background/icons/terms-I.svg') no-repeat top 106px right 18.13px /
       74.87px 25.78px;
 }
-/* 97.84px 140px; */
+
 .terms-parts-container {
   display: flex;
   align-items: flex-start;
@@ -52,6 +52,11 @@
     gap: 96px;
     padding-top: 270px;
     padding-bottom: 120px;
+  }
+
+  .terms-background-img {
+    background-size: 97.84px 140px, 284.39px 97.9px;
+    background-position: top 180px right 254.94px, top 93px right 176.61px;
   }
 
   .terms-parts-container {
