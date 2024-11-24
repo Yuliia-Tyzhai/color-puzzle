@@ -14,16 +14,18 @@
   font-weight: 400;
   text-align: center;
 }
-.slash {
+.terms-slash {
   color: transparent;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-section .footer-container {
-    padding: 32px 72px;
+    padding: 32px 72px 32px 207px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    font-weight: 400;
+    font-size: 14px;
   }
   .footer-text {
     padding-right: 69px;
@@ -42,19 +44,15 @@
 
   .terms-list {
     display: flex;
-    padding-inline: 69px;
+    padding-inline: 69px 0;
     padding-bottom: 0;
-    gap: 9px;
-    font-weight: 400;
-    font-size: 14px;
-    align-items: center;
+    gap: 7px;
   }
   .terms-item:first-child {
     padding-bottom: 0;
   }
-  .slash {
+  .terms-slash {
     color: #020202;
     display: inline-block;
-    margin-left: 8px;
   }
 }
