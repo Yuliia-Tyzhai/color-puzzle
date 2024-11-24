@@ -39,17 +39,34 @@
   .about-the-game-text {
     display: block;
     padding-right: 341px;
+    height: auto;
   }
   .part-one,
   .part-two {
     display: inline;
   }
+  .absolut {
+    position: absolute;
+    top: 0;
+    left: 725px;
+  }
   .about-picture {
     top: 114px;
-    bottom: 64px;
-  }
-  .about-img {
+    right: 64px;
     width: 334px;
     height: 349px;
+  }
+  .about-img {
+    width: auto;
+    height: auto;
+  }
+  .about-background-img {
+    background: url('../img/background/icons/about-zigzag-desk.svg') no-repeat
+        top left 43px / 1134px 33px,
+      url('../img/background/icons/about-title-mob.svg') no-repeat top left,
+      url(../img/background/icons/about-arrows-desk.svg) no-repeat top 94.94px
+        right 109.78px / 166.33px 230.76px,
+      url('../img/background/icons/about-line-desk.svg') no-repeat bottom
+        12.28px left 380.31px / 431.45px 115.95px;
   }
 }
