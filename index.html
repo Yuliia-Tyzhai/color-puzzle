@@ -22,17 +22,21 @@
     <script type="module" crossorigin src="/color-puzzle/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/color-puzzle/assets/vendor-c12d68e1.js">
     <link rel="stylesheet" href="/color-puzzle/assets/vendor-db544325.css">
-    <link rel="stylesheet" href="/color-puzzle/assets/styles-7988e9a3.css">
+    <link rel="stylesheet" href="/color-puzzle/assets/styles-3ef07a87.css">
   </head>
   <body>
     <!-- ================ HEADER Menu ================ -->
-<header class="header">
+<header>
   <div class="header-container container">
+    <div class="header-background-img"></div>
+
     <div class="logo-container">
-      <img class="logo-image" src="/color-puzzle/assets/header-logo-e3f958b6.jpg" alt="Logo" />
-      <svg class="logo-svg" width="93" height="87">
-        <use href="/color-puzzle/assets/sprite-624edb54.svg#header-logo"></use>
-      </svg>
+      <img
+        class="logo-image"
+        src="/color-puzzle/assets/header-logo@2x-31c27ab4.png"
+        alt="Logo"
+        srcset="/color-puzzle/assets/header-logo@2x-31c27ab4.png 1x, /color-puzzle/assets/header-logo@2x-31c27ab4.png 2x"
+      />
     </div>
 
     <svg class="burger-menu js-burger-menu" width="40" height="40">
@@ -57,9 +61,6 @@
           <a href="#faq">FAQ</a>
         </li>
       </ul>
-      <svg class="header-line" width="964" height="6">
-        <use href="/color-puzzle/assets/sprite-624edb54.svg#header-line"></use>
-      </svg>
     </nav>
   </div>
 </header>
