@@ -22,28 +22,30 @@
     <script type="module" crossorigin src="/color-puzzle/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/color-puzzle/assets/vendor-c12d68e1.js">
     <link rel="stylesheet" href="/color-puzzle/assets/vendor-db544325.css">
-    <link rel="stylesheet" href="/color-puzzle/assets/styles-459c2b4f.css">
+    <link rel="stylesheet" href="/color-puzzle/assets/styles-eb0c92ec.css">
   </head>
   <body>
     <!-- ================ HEADER Menu ================ -->
 <header>
-  <div class="header-container container">
+  <div class="header-container container js-header">
     <div class="header-background-img"></div>
 
     <div class="logo-container">
-      <img
-        class="logo-image"
-        src="/color-puzzle/assets/header-logo@2x-31c27ab4.png"
-        alt="Logo"
-        srcset="/color-puzzle/assets/header-logo@2x-31c27ab4.png 1x, /color-puzzle/assets/header-logo@2x-31c27ab4.png 2x"
-      />
+      <a class="logo-link" href="/">
+        <img
+          class="logo-image"
+          src="/color-puzzle/assets/header-logo@2x-31c27ab4.png"
+          alt="Logo"
+          srcset="/color-puzzle/assets/header-logo@1x-061dbe72.png 1x, /color-puzzle/assets/header-logo@2x-31c27ab4.png 2x"
+        />
+      </a>
     </div>
 
     <svg class="burger-menu js-burger-menu" width="40" height="40">
       <use href="/color-puzzle/assets/sprite-624edb54.svg#header-menu"></use>
     </svg>
 
-    <nav class="nav-menu">
+    <nav class="nav-menu js-nav-menu">
       <ul class="nav-list">
         <li class="nav-list-item">
           <a href="#hero">Home</a>
@@ -430,7 +432,7 @@
 </footer>
 
     <!-- ================ Mobile Menu ================ -->
-<div class="mob-menu js-mob-menu hidden background">
+<div class="mob-menu js-mob-menu background">
   <div class="container menu-container">
     <div class="mobile-background-img"></div>
 
