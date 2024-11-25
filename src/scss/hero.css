@@ -97,7 +97,6 @@
 }
 .hero-text {
   text-align: right;
-  padding-left: 38px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -108,10 +107,11 @@
   .hero-background-img {
     background: url('/img/background/icons/hero-man.svg') no-repeat top 310px
         right 86.9px,
-      url('/img/background/icons/header-rope.svg') no-repeat top right 85.01px,
+      url('../img/background/icons/hero-rope-desk.svg') no-repeat top 25px right
+        85.01px,
       url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 21px left
         271px,
-      url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 264.35px
+      url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 226.35px
         left 114px;
 
     background-size: 56.1px 76.66px, 23.02px 312.05px, 139px 61px,
