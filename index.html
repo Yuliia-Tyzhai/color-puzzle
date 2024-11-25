@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/color-puzzle/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/color-puzzle/assets/vendor-c12d68e1.js">
     <link rel="stylesheet" href="/color-puzzle/assets/vendor-db544325.css">
-    <link rel="stylesheet" href="/color-puzzle/assets/styles-c690ed91.css">
+    <link rel="stylesheet" href="/color-puzzle/assets/styles-09958224.css">
   </head>
   <body>
     <!-- ================ HEADER Menu ================ -->
@@ -122,6 +122,26 @@
       <section class="section gallery-section" id="gallery">
   <div class="container gallery-container background">
     <h2 class="title gallery-title">Gallery</h2>
+
+    <div class="gallery-icons-arrows">
+      <button
+        type="button"
+        class="swiper-button-prev gallery-swiper-button-prev"
+      >
+        <svg class="gallery-icon-left" width="24" height="23">
+          <use href="/color-puzzle/assets/sprite1-4635c830.svg#icon-Left-Arrow-Icon"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="swiper-button-next gallery-swiper-button-next"
+      >
+        <svg class="gallery-icon-right" width="24" height="23">
+          <use href="/color-puzzle/assets/sprite1-4635c830.svg#icon-Right-Arrow-Icon"></use>
+        </svg>
+      </button>
+    </div>
+
     <div class="swiper gallery-swiper">
       <div class="swiper-wrapper gallery-swiper-wrapper">
         <div class="swiper-slide gallery-swiper-slide">
@@ -185,18 +205,18 @@
           </picture>
         </div>
       </div>
-      <div class="btns-container">
+      <!-- <div class="btns-container">
         <div class="swiper-button-prev gallery-swiper-button-prev">
           <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/color-puzzle/assets/sprite1-4635c830.svg#icon-Left-Arrow-Icon"></use>
+            <use href="/img/sprite1.svg#icon-Left-Arrow-Icon"></use>
           </svg>
         </div>
         <div class="swiper-button-next gallery-swiper-button-next">
           <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/color-puzzle/assets/sprite1-4635c830.svg#icon-Right-Arrow-Icon"></use>
+            <use href="/img/sprite1.svg#icon-Right-Arrow-Icon"></use>
           </svg>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -208,27 +228,41 @@
       <div class="swiper-pagination features-swiper-pagination"></div>
       <div class="swiper-wrapper features-swiper-wrapper">
         <div class="swiper-slide features-swiper-slide">
-          <h3>Simple Yet Challenging:</h3>
-          <p>Easy to understand, but requires strategic thinking to master.</p>
+          <div class="text">
+            <h3>Simple Yet Challenging:</h3>
+            <p>
+              Easy to understand, but requires strategic thinking to master.
+            </p>
+          </div>
         </div>
         <div class="swiper-slide features-swiper-slide">
-          <h3>Vibrant Graphics:</h3>
-          <p>
-            Enjoy eye-catching colors and animations that enhance your gaming
-            experience.
-          </p>
+          <div class="text">
+            <h3>Vibrant Graphics:</h3>
+            <p>
+              Enjoy eye-catching colors and animations that enhance your gaming
+              experience.
+            </p>
+          </div>
         </div>
         <div class="swiper-slide features-swiper-slide">
-          <h3>Multiple Levels:</h3>
-          <p>Progress through hundreds of levels with increasing difficulty.</p>
+          <div class="text">
+            <h3>Multiple Levels:</h3>
+            <p>
+              Progress through hundreds of levels with increasing difficulty.
+            </p>
+          </div>
         </div>
         <div class="swiper-slide features-swiper-slide">
-          <h3>Calming Gameplay:</h3>
-          <p>Perfect for relaxation and stress relief after a long day.</p>
+          <div class="text">
+            <h3>Calming Gameplay:</h3>
+            <p>Perfect for relaxation and stress relief after a long day.</p>
+          </div>
         </div>
         <div class="swiper-slide features-swiper-slide">
-          <h3>Offline Mode:</h3>
-          <p>Play anytime, anywhere without an internet connection.</p>
+          <div class="text">
+            <h3>Offline Mode:</h3>
+            <p>Play anytime, anywhere without an internet connection.</p>
+          </div>
         </div>
       </div>
       <div class="swiper-pagination features-swiper-pagination"></div>
