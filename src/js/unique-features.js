@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiperEl = document.querySelector('.features-swiper');
 
   if (swiperEl) {
-    // Ініціалізація Swiper
     const swiper = new Swiper(swiperEl, {
       slidesPerView: 1,
       loop: true,
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
-    // Додаємо стилі для пагінації буллетів
     const style = document.createElement('style');
     style.innerHTML = `
       .features-swiper-pagination {
@@ -29,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
       gap: 8px;
       margin-top: 56px;
       margin-bottom: 53px;
-      position: absolute;
-      top: 10px;left: 50%;
       }
 
       .swiper-pagination-bullet {
