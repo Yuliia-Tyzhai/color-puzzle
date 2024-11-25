@@ -98,7 +98,11 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-
+.privacy-terms-container {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  position: relative;
+}
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -109,9 +113,14 @@ ul {
   line-height: 1.5;
   text-transform: uppercase;
   padding: 12px 16px;
+  margin-bottom: 88px;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .back-link:hover {
+  transform: scale(1.05);
   box-shadow: 4px 4px 0 0 #8a9ace;
 }
 
@@ -137,6 +146,10 @@ ul {
     padding: 11px 49px;
   }
 
+  .privacy-terms-container {
+    padding-top: 270px;
+    padding-bottom: 240px;
+  }
   .back-link {
     position: absolute;
     top: 96px;

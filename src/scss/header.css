@@ -55,8 +55,9 @@ header .header-container {
   .header-background-img {
     background: url('/img/background/icons/header-logo-back.svg') no-repeat top
         7.97px left 60.95px,
-      url('/img/background/icons/header-divider.svg') no-repeat top 70px right;
-    background-size: 93.41px 85.96px, 963.34px 5.76px;
+      url('/img/background/icons/header-divider.svg') no-repeat top 50.5px right
+        13px;
+    background-size: 93.41px 85.96px, 963.34px 7.5px;
   }
   .logo-container {
     padding-inline: 0 62px;

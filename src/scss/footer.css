@@ -3,18 +3,22 @@
   background: #fff;
   border: 1px solid #020202;
 }
-.terms-list {
+.footer-terms-list {
   padding-bottom: 32px;
   font-weight: 400;
+  transition: color 0.3 ease;
 }
-.terms-item:not(:last-child) {
+.footer-terms-list a:hover {
+  color: #8a9ace;
+}
+.footer-terms-item:not(:last-child) {
   padding-bottom: 8px;
 }
 .footer-text {
   font-weight: 400;
   text-align: center;
 }
-.terms-slash {
+.footer-terms-slash {
   color: transparent;
 }
 
@@ -42,16 +46,16 @@
     width: 1px;
   }
 
-  .terms-list {
+  .footer-terms-list {
     display: flex;
     padding-inline: 69px 0;
     padding-bottom: 0;
     gap: 7px;
   }
-  .terms-item:first-child {
+  .footer-terms-item:first-child {
     padding-bottom: 0;
   }
-  .terms-slash {
+  .footer-terms-slash {
     color: #020202;
     display: inline-block;
   }
