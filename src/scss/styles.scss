@@ -31,6 +31,23 @@ main {
   padding-top: 105px;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .container {
   max-width: 320px;
   margin: 0 auto;
@@ -82,27 +99,12 @@ main {
   display: inline-block;
 }
 
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-ul {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
 .privacy-terms-container {
   padding-top: 32px;
   padding-bottom: 56px;
   position: relative;
 }
+
 .back-link {
   display: inline-flex;
   align-items: center;
