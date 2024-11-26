@@ -54,12 +54,11 @@ navMobLinks.forEach(link => {
   });
 });
 
-// active yeader link
-
+// active header link
 const observerOptions = {
-  root: null, // Вікно перегляду
-  rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, // Враховує висоту хедера
-  threshold: 0.7, // 50% секції у видимій області
+  root: null,
+  rootMargin: `-${header.offsetHeight}px 0px 0px 0px`,
+  threshold: 0.6,
 };
 
 function highlightActiveSection(entries) {
