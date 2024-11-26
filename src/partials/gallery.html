@@ -29,13 +29,17 @@
             ><source
               media="(min-width: 1200px)"
               srcset="
-                /img/gallery/gallery-1-desk-min.png    1x,
-                /img/gallery/gallery-1-desk@2x-min.png 2x
+                ./img/gallery/gallery-1-desk-min.png    1x,
+                ./img/gallery/gallery-1-desk@2x-min.png 2x
               "
             />
             <img
+              loading="lazy"
+              srcset="
+                ./img/gallery/gallery-1-mob-min.png    1x,
+                ./img/gallery/gallery-1-mob@2x-min.png
+              "
               class="gallery-img"
-              src="/img/gallery/gallery-1-desk-min.png"
               alt="image1"
               width="306"
               height="542"
