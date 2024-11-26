@@ -69,7 +69,7 @@ setInterval(() => {
   const nextSpan =
     activeSpan.nextElementSibling || changeWords.querySelector('span');
   nextSpan.classList.add('active');
-}, 2000);
+}, 1000);
 
 // let index = 0;
 
