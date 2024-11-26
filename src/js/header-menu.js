@@ -1,6 +1,7 @@
 const header = document.querySelector('.js-header');
 const headerLinks = document.querySelectorAll('.js-nav-menu a');
-console.log(headerLinks);
+const sections = document.querySelectorAll('section');
+console.log(sections);
 
 const burgerMenu = document.querySelector('.js-burger-menu');
 const mobMenu = document.querySelector('.js-mob-menu');
@@ -52,3 +53,32 @@ navMobLinks.forEach(link => {
     closeMenu();
   });
 });
+
+// active yeader link
+
+const observerOptions = {
+  root: null, // Вікно перегляду
+  rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, // Враховує висоту хедера
+  threshold: 0.5, // 50% секції у видимій області
+};
+
+function highlightActiveSection(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const activeId = entry.target.getAttribute('id');
+      headerLinks.forEach(link => {
+        link.classList.toggle(
+          'active',
+          link.getAttribute('href').slice(1) === activeId
+        );
+      });
+    }
+  });
+}
+
+const observer = new IntersectionObserver(
+  highlightActiveSection,
+  observerOptions
+);
+
+sections.forEach(section => observer.observe(section));
