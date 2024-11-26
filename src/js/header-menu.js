@@ -52,3 +52,15 @@ navMobLinks.forEach(link => {
     closeMenu();
   });
 });
+
+// animation hero
+const changeWords = document.querySelector('.change-words');
+const spans = changeWords.querySelectorAll('span');
+
+let index = 0;
+
+setInterval(() => {
+  spans[index].classList.remove('active');
+  index = (index + 1) % spans.length;
+  spans[index].classList.add('active');
+}, 2000);
