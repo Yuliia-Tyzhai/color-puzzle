@@ -59,7 +59,7 @@ navMobLinks.forEach(link => {
 const observerOptions = {
   root: null, // Вікно перегляду
   rootMargin: `-${header.offsetHeight}px 0px 0px 0px`, // Враховує висоту хедера
-  threshold: 0.5, // 50% секції у видимій області
+  threshold: 0.7, // 50% секції у видимій області
 };
 
 function highlightActiveSection(entries) {
