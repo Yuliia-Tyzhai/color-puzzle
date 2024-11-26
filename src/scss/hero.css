@@ -9,12 +9,12 @@
   z-index: 1;
   background: url('/img/background/icons/hero-man.svg') no-repeat top 240.68px
       right 19.21px,
-    url('/img/background/icons/hero-rope-mob.svg') no-repeat top right 16px,
+    url('/img/background/icons/hero-rope-mob.svg') no-repeat top -4px right 15px,
     url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 7px left
       28px,
     url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 153.87px
       left 105.6px;
-  background-size: 28.79px 36.85px, 28px 259px, 63px 27px, 106.96px 37.13px;
+  background-size: 28.79px 36.85px, 24px 259px, 63px 27px, 106.96px 37.13px;
 }
 
 .hero-title {
@@ -107,14 +107,14 @@
   .hero-background-img {
     background: url('/img/background/icons/hero-man.svg') no-repeat top 310px
         right 86.9px,
-      url('../img/background/icons/hero-rope-desk.svg') no-repeat top right
-        85.01px,
+      url('../img/background/icons/hero-rope-desk.svg') no-repeat top -24px right
+        83px,
       url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 21px left
         271px,
       url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 226.35px
         left 114px;
 
-    background-size: 56.1px 76.66px, 43.02px 372.05px, 139px 61px,
+    background-size: 56.1px 76.66px, 26px 372.05px, 139px 61px,
       419.85px 145.75px;
   }
   .hero-title {
