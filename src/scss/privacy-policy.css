@@ -23,16 +23,21 @@
   font-weight: 300;
   margin-bottom: 24px;
 }
-.inner-list {
+.privacy-inner-list {
   font-weight: 300;
   list-style-type: square;
   margin-bottom: 20px;
   padding-left: 16px;
+}
+.privacy-inner-block a {
   text-decoration: underline;
 }
 .privacy-inner-list a:hover {
   color: #8a9ace;
   text-decoration: underline;
+}
+.privacy-inner-block a:hover {
+  color: #8a9ace;
 }
 
 @media screen and (min-width: 1200px) {
@@ -52,11 +57,11 @@
   .privacy-title {
     margin-bottom: 96px;
   }
-  .privacy-inner-list {
+  .privacy-inner-block {
     list-style-type: square;
     margin-bottom: 44px;
   }
-  .inner-list {
+  .privacy-inner-list {
     padding-left: 22px;
   }
   .privacy-container p:not(:last-child) {

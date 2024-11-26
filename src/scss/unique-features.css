@@ -15,7 +15,7 @@
 }
 
 .features-swiper-slide {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   background: #fff;
   display: flex;
@@ -28,8 +28,8 @@
 
 .text {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
   width: 180px;
@@ -38,11 +38,42 @@
   font-size: 12px;
   line-height: 1.5;
   color: #020202;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text-1 {
+  padding: 90px 20px 115px 93px;
+}
+
+.text-2 {
+  padding: 117px 36px 125px 111px;
+}
+
+.text-3 {
+  padding: 110px 96px 130px 96px;
+}
+
+.text-4 {
+  padding: 100px 95px 119px 50px;
+}
+
+.text-5 {
+  padding: 119px 66px 58px 17px;
+}
+
+.features-swiper-slide h3 {
+  font-size: 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.features-swiper-slide p {
+  font-size: 12px;
+  width: 100%;
 }
 
 .features-swiper-slide:nth-child(1) {
@@ -59,7 +90,7 @@
   background-image: url(../img/unique-features/unique-features-mob-2.png);
   width: 276px;
   height: 276px;
-  transform: rotate(-24deg);
+  transform: rotate(-4deg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +100,6 @@
   background-image: url(../img/unique-features/unique-features-mob-3.png);
   width: 276px;
   height: 276px;
-  transform: rotate(-84deg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +109,6 @@
   background-image: url(../img/unique-features/unique-features-mob-4.png);
   width: 276px;
   height: 276px;
-  transform: rotate(11deg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,7 +118,7 @@
   background-image: url(../img/unique-features/unique-features-mob-5.png);
   width: 276px;
   height: 276px;
-  transform: rotate(-31deg);
+  transform: rotate(-3deg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -172,7 +201,6 @@
     background-image: url(../img/unique-features/unique-features-mob-4.png);
     width: 640px;
     height: 640px;
-    transform: rotate(11deg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -182,7 +210,7 @@
     background-image: url(../img/unique-features/unique-features-mob-5.png);
     width: 640px;
     height: 640px;
-    transform: rotate(deg);
+    transform: rotate(-31deg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -203,6 +231,7 @@
   }
 
   .text {
+    gap: 48px;
     width: 265px;
     height: 144px;
     font-size: 16px;
