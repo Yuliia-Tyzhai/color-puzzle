@@ -106,10 +106,10 @@ header .header-container {
   position: absolute;
   inset: 0;
   z-index: 11;
-  background: url('/img/background/icons/mobile-man.svg') no-repeat bottom
-      101.39px left 128px / 63.93px 77.61px,
-    url('/img/background/icons/mobile-splash.svg') no-repeat bottom 125.83px
-      left 28px / 236.88px 132.17px;
+  background: url('/img/background/icons/mobile-man.svg') no-repeat top 497px
+      left 128px / 63.93px 77.61px,
+    url('/img/background/icons/mobile-splash.svg') no-repeat top 418px left 28px /
+      236.88px 132.17px;
 }
 .menu-container {
   position: relative;
