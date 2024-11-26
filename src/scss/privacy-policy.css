@@ -31,7 +31,10 @@
 }
 .privacy-inner-block a {
   text-decoration: underline;
-  cursor: pointer;
+}
+.privacy-inner-list a:hover {
+  color: #8a9ace;
+  text-decoration: underline;
 }
 .privacy-inner-block a:hover {
   color: #8a9ace;
