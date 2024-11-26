@@ -6,6 +6,7 @@
 .features-swiper {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .features-swiper-wrapper {
@@ -21,6 +22,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: transparent;
+  position: relative;
 }
 
 .text {
@@ -36,6 +39,10 @@
   line-height: 1.5;
   color: #020202;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .features-swiper-slide:nth-child(1) {
@@ -43,7 +50,8 @@
   width: 276px;
   height: 276px;
   transform: rotate(11deg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -51,8 +59,9 @@
   background-image: url(../img/unique-features/unique-features-mob-2.png);
   width: 276px;
   height: 276px;
-  transform: rotate(11deg);
-  background-size: cover;
+  transform: rotate(-24deg);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -60,8 +69,9 @@
   background-image: url(../img/unique-features/unique-features-mob-3.png);
   width: 276px;
   height: 276px;
-  transform: rotate(11deg);
-  background-size: cover;
+  transform: rotate(-84deg);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -70,7 +80,8 @@
   width: 276px;
   height: 276px;
   transform: rotate(11deg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -78,8 +89,9 @@
   background-image: url(../img/unique-features/unique-features-mob-5.png);
   width: 276px;
   height: 276px;
-  transform: rotate(11deg);
-  background-size: cover;
+  transform: rotate(-31deg);
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -87,10 +99,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
   gap: 8px;
-  position: absolute;
-  top: 140px;
-  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .swiper-pagination-bullet {
@@ -104,14 +117,14 @@
   line-height: 1.6;
   color: #020202;
   padding: 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
   opacity: 1;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .swiper-pagination-bullet-active {
   border: 1px solid #020202;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -127,10 +140,11 @@
 
   .features-swiper-slide:nth-child(1) {
     background-image: url(../img/unique-features/unique-features-mob-1.png);
-    width: 640px;
-    height: 640px;
+    width: 689px;
+    height: 688px;
     transform: rotate(11deg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -138,8 +152,9 @@
     background-image: url(../img/unique-features/unique-features-mob-2.png);
     width: 640px;
     height: 640px;
-    transform: rotate(11deg);
-    background-size: cover;
+    transform: rotate(-24deg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -147,8 +162,9 @@
     background-image: url(../img/unique-features/unique-features-mob-3.png);
     width: 640px;
     height: 640px;
-    transform: rotate(11deg);
-    background-size: cover;
+    transform: rotate(-84deg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -157,7 +173,8 @@
     width: 640px;
     height: 640px;
     transform: rotate(11deg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -165,39 +182,29 @@
     background-image: url(../img/unique-features/unique-features-mob-5.png);
     width: 640px;
     height: 640px;
-    transform: rotate(11deg);
-    background-size: cover;
+    transform: rotate(deg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
   .features-swiper-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    flex-direction: column;
     position: absolute;
-    top: 140px;
-    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+    margin: 120px 89px 230px 40px;
   }
 
   .swiper-pagination-bullet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #020202;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    opacity: 1;
+    width: 80px;
+    height: 80px;
   }
 
-  .swiper-pagination-bullet-active {
-    border: 1px solid #020202;
-    background: #ffffff;
+  .text {
+    width: 265px;
+    height: 144px;
+    font-size: 16px;
   }
 }
