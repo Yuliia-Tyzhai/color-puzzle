@@ -44,54 +44,32 @@ main {
   border-left: 1px solid #020202;
 
   @include media(mobile) {
-    // background-image: url('/img/background/substrate-mob@2x.png');
-    // // background-repeat: repeat-y;
-    // background-position: center;
-    // background-size: contain;
-
-    //background: linear-gradient(
-    //     rgba(233, 242, 255, 0.7),
-    //     rgb(233, 242, 255, 0.7)
-    //   ),
-    //   url('/img/background/background-mobile@1x.jpg') repeat-y center;
-    // background-size: cover;
-    // background-position: 14px -10px;
+    background: url('/img/background/background-mob@1x.png') repeat top left 5px /
+        320px auto,
+      linear-gradient(to bottom, $_main_bg_color, $_main_bg_color);
   }
 
   @include media(desktop) {
-    //   background: linear-gradient(
-    //       rgba(233, 242, 255, 0.7),
-    //       rgb(233, 242, 255, 0.7)
-    //     ),
-    //     url('/img/background/background-desk@1x.jpg') repeat-y center;
-    //   background-size: cover;
-    //   background-position: 14px -14px;
-    // }
+    background: url('/img/background/background-desk@1x.png') repeat top 15px
+        left 17px / 1200px auto,
+      linear-gradient(to bottom, $_main_bg_color, $_main_bg_color);
   }
 }
 
 @media screen and (min-resolution: 192dpi) {
-  // .background {
-  //   background: linear-gradient(
-  //       rgba(233, 242, 255, 0.7),
-  //       rgba(233, 242, 255, 0.7)
-  //     ),
-  //     url(/img/background/background-mobile@2x.jpg) repeat-y center;
-  //   background-size: cover;
-  //   background-position: 14px -10px;
-  // }
+  .background {
+    background: url('/img/background/background-mob@2x.png') repeat top left 6px /
+        320px auto,
+      linear-gradient(to bottom, $_main_bg_color, $_main_bg_color);
+  }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
-  // .background {
-  //   background: linear-gradient(
-  //       rgba(233, 242, 255, 0.7),
-  //       rgba(233, 242, 255, 0.7)
-  //     ),
-  //     url('../img/background/background-desk@2x.jpg') repeat-y center;
-  //   background-size: cover;
-  //   background-position: 14px -14px;
-  // }
+  .background {
+    background: url('/img/background/background-desk@2x.png') repeat top 15px
+        left 14px / 1200px auto,
+      linear-gradient(to bottom, $_main_bg_color, $_main_bg_color);
+  }
 }
 
 .title {
@@ -120,7 +98,11 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-
+.privacy-terms-container {
+  padding-top: 32px;
+  padding-bottom: 56px;
+  position: relative;
+}
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -131,6 +113,15 @@ ul {
   line-height: 1.5;
   text-transform: uppercase;
   padding: 12px 16px;
+  margin-bottom: 88px;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.back-link:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 0 0 #8a9ace;
 }
 
 .back-btn {
@@ -152,9 +143,13 @@ ul {
   .title {
     font-weight: 600;
     font-size: 32px;
-    padding: 12px 50px;
+    padding: 11px 49px;
   }
 
+  .privacy-terms-container {
+    padding-top: 270px;
+    padding-bottom: 240px;
+  }
   .back-link {
     position: absolute;
     top: 96px;

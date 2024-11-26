@@ -55,8 +55,9 @@ header .header-container {
   .header-background-img {
     background: url('/img/background/icons/header-logo-back.svg') no-repeat top
         7.97px left 60.95px,
-      url('/img/background/icons/header-divider.svg') no-repeat top 70px right;
-    background-size: 93.41px 85.96px, 963.34px 5.76px;
+      url('/img/background/icons/header-divider.svg') no-repeat top 50.5px right
+        13px;
+    background-size: 93.41px 85.96px, 963.34px 7.5px;
   }
   .logo-container {
     padding-inline: 0 62px;
@@ -73,6 +74,10 @@ header .header-container {
   }
   .nav-list-item a {
     padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+  .nav-list-item a:hover {
+    color: #8a9ace;
   }
 }
 
@@ -80,50 +85,49 @@ header .header-container {
 .no-scroll {
   overflow: hidden;
 }
-.hidden {
-  display: none;
-}
 .mob-menu.is-open {
   transform: translateX(0);
 }
 .mob-menu.is-closing {
-  transform: translateX(100%); /* Анімація повернення */
-  transition: transform 0.3s ease-in-out; /* Ефект анімації для закриття */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 .mob-menu {
   position: fixed;
-  top: 0;
-  right: 0;
+  inset: 0;
   width: 100%;
   height: 100vh;
   overflow-y: auto;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 10;
-  background-color: #e9f2ff;
+}
+.mobile-background-img {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  background: url('/img/background/icons/mobile-man.svg') no-repeat bottom
+      101.39px left 128px / 63.93px 77.61px,
+    url('/img/background/icons/mobile-splash.svg') no-repeat bottom 125.83px
+      left 28px / 236.88px 132.17px;
 }
 .menu-container {
   position: relative;
-  background: url(/img/background/background-mob.png),
-    linear-gradient(rgba(233, 242, 255, 0.5), rgba(233, 242, 255, 0.5)) repeat-y
-      center;
-  background-size: auto;
   padding: 56px 16px;
   height: 100vh;
-  /* min-height: 600px; */
 }
 .menu-close-btn {
   position: absolute;
-  top: 56px;
-  right: 16px;
+  top: 40px;
+  right: 0;
+  z-index: 13;
   border: none;
   background-color: transparent;
-}
-.close-icon {
-  width: 16px;
-  height: 18px;
+  padding: 16px;
 }
 .nav-list-mobile {
+  position: relative;
+  z-index: 12;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -131,18 +135,4 @@ header .header-container {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: #020202;
-}
-.men {
-  position: relative;
-  height: 77px;
-  width: 63px;
-  left: 105px;
-  bottom: -140px;
-}
-.slash {
-  position: absolute;
-  width: 236px;
-  height: 132px;
-  bottom: 130px;
 }

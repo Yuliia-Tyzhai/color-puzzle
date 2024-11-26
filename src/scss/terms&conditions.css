@@ -1,58 +1,46 @@
-.back-link {
-  margin-bottom: 88px;
+.terms-background-img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: url('/img/background/icons/terms-man.svg') no-repeat top 128.91px
+      right 38.34px / 25.8px 36.86px,
+    url('/img/background/icons/terms-I.svg') no-repeat top 106px right 18.13px /
+      74.87px 25.78px;
 }
 
-.terms-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 56px;
-  padding-top: 32px;
-  padding-bottom: 55px;
+.terms-parts-container:not(:last-child) {
+  margin-bottom: 56px;
 }
 
-.terms-parts-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 40px;
+.terms-title {
+  margin-bottom: 32px;
 }
 
-.last {
-  padding-bottom: 56px;
-}
-
-.text-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
+.terms-text,
+.terms-links-list {
+  margin-bottom: 24px;
 }
 
 .terms-links-list {
   list-style: square;
   margin-left: 16px;
 }
+.terms-links-text {
+  margin-bottom: 24px;
+  font-weight: 300;
+}
 
 @media screen and (min-width: 1200px) {
-  .terms-container.container {
-    gap: 96px;
-    padding-top: 270px;
-    padding-bottom: 120px;
+  .terms-background-img {
+    background-size: 97.84px 140px, 284.39px 97.9px;
+    background-position: top 180px right 254.94px, top 93px right 176.61px;
   }
-
-  .terms-parts-container {
-    gap: 96px;
+  .terms-parts-container:not(:last-child),
+  .terms-title {
+    margin-bottom: 96px;
   }
-
-  .last {
-    padding-bottom: 120px;
-  }
-
-  .text-container {
-    gap: 56px;
+  .terms-text,
+  .terms-links-list {
+    margin-bottom: 56px;
   }
 }

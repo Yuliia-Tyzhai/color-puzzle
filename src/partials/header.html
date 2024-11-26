@@ -1,22 +1,26 @@
 <!-- ================ HEADER Menu ================ -->
 <header>
-  <div class="header-container container">
+  <div class="header-container container js-header">
     <div class="header-background-img"></div>
 
     <div class="logo-container">
-      <img
-        class="logo-image"
-        src="/img/header-logo@2x.png"
-        alt="Logo"
-        srcset="/img/header-logo@2x.png 1x, /img/header-logo@2x.png 2x"
-      />
+      <a class="logo-link" href="./">
+        <img
+          class="logo-image"
+          src="./img/header-logo@2x.png"
+          alt="Logo"
+          srcset="./img/header-logo@1x.png 1x, ./img/header-logo@2x.png 2x"
+          loading="lazy"
+          title="logo"
+        />
+      </a>
     </div>
 
     <svg class="burger-menu js-burger-menu" width="40" height="40">
       <use href="/img/sprite.svg#header-menu"></use>
     </svg>
 
-    <nav class="nav-menu">
+    <nav class="nav-menu js-nav-menu">
       <ul class="nav-list">
         <li class="nav-list-item">
           <a href="#hero">Home</a>

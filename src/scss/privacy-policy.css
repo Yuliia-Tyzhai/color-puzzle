@@ -1,22 +1,12 @@
-.privacy-main-container {
-  padding-top: 32px;
-  padding-bottom: 55px;
-  position: relative;
-}
 .privacy-background-img {
   position: absolute;
   z-index: 1;
   inset: 0;
-  background: url('../img/background/icons/privacy-man.svg') no-repeat top
+  background: url('/img/background/icons/privacy-man.svg') no-repeat top
       123.49px right 33.99px,
-    url('../img/background/icons/privacy-symb.svg') no-repeat top 104px right
+    url('/img/background/icons/privacy-symb.svg') no-repeat top 104px right
       34.21px;
   background-size: 24.05px 42.09px, 25.79px 15.73px;
-}
-.back-link {
-  margin-bottom: 88px;
-  position: relative;
-  z-index: 2;
 }
 .privacy-container {
   position: relative;
@@ -31,7 +21,7 @@
 .privacy-container p,
 .privacy-container h4 {
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .inner-list {
   font-weight: 300;
@@ -47,7 +37,7 @@
 @media screen and (min-width: 1200px) {
   .privacy-main-container.container {
     padding-top: 270px;
-    padding-bottom: 120px;
+    padding-bottom: 240px;
     font-weight: 300;
     font-size: 16px;
   }
@@ -69,6 +59,6 @@
     padding-left: 22px;
   }
   .privacy-container p:not(:last-child) {
-    margin-bottom: 44px;
+    margin-bottom: 56px;
   }
 }
