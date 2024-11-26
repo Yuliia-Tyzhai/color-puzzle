@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiperEl = document.querySelector('.features-swiper');
 
   if (swiperEl) {
-    // Ініціалізація Swiper
     const swiper = new Swiper(swiperEl, {
       slidesPerView: 1,
       loop: true,
@@ -18,25 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
       },
     });
 
-    // Додаємо стилі для пагінації буллетів
     const style = document.createElement('style');
     style.innerHTML = `
       .features-swiper-pagination {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: row;
-      gap: 8px;
-      margin-top: 56px;
-      margin-bottom: 53px;
-      position: absolute;
-      top: 10px;left: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        position: relative;
       }
 
       .swiper-pagination-bullet {
         display: flex;
         align-items: center;
-        justify-content: center;  
+        justify-content: center;
         width: 40px;
         height: 40px;
         font-weight: 500;
@@ -44,16 +41,30 @@ document.addEventListener('DOMContentLoaded', function () {
         line-height: 1.6;
         color: #020202;
         padding: 10px;
-        width: 40px;
-        height: 40px;
-        background-color: #ffffff;
         opacity: 1;
         border-radius: 0px;
+        background:transparent;
       }
 
       .swiper-pagination-bullet-active {
         border: 1px solid #020202;
-        background: #ffffff;
+        background-color: #ffffff;
+      }
+
+      @media screen and (min-width: 1200px) {
+       .features-swiper-pagination { 
+       flex-direction: column; 
+       position: absolute; 
+       top: 50%;
+       left: 0; 
+       transform: translateX(-50%);
+       margin: 120px 89px 230px 40px;
+      }
+   
+        .swiper-pagination-bullet {
+          width: 80px;
+          height: 80px;
+        }
       }
     `;
     document.head.appendChild(style);
