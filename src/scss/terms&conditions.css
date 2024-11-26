@@ -9,6 +9,8 @@
 }
 
 .terms-parts-container:not(:last-child) {
+  position: relative;
+  z-index: 2;
   margin-bottom: 56px;
 }
 
@@ -24,7 +26,14 @@
 .terms-links-list {
   list-style: square;
   margin-left: 16px;
+  text-decoration: underline;
 }
+
+.terms-links-list a:hover {
+  color: #8a9ace;
+  text-decoration: underline;
+}
+
 .terms-links-text {
   margin-bottom: 24px;
   font-weight: 300;
