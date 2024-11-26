@@ -52,3 +52,29 @@ navMobLinks.forEach(link => {
     closeMenu();
   });
 });
+
+// animation hero
+const changeWords = document.querySelector('.change-words');
+const spans = changeWords.querySelectorAll('span');
+
+function getRandomColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
+setInterval(() => {
+  const activeSpan = changeWords.querySelector('.active');
+  activeSpan.style.color = getRandomColor();
+  activeSpan.classList.remove('active');
+
+  const nextSpan =
+    activeSpan.nextElementSibling || changeWords.querySelector('span');
+  nextSpan.classList.add('active');
+}, 2000);
+
+// let index = 0;
+
+// setInterval(() => {
+//   spans[index].classList.remove('active');
+//   index = (index + 1) % spans.length;
+//   spans[index].classList.add('active');
+// }, 2000);
