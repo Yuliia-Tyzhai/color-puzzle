@@ -10,22 +10,22 @@
 
 .gallery-icons-arrows {
   position: absolute;
-  top: 62px;
-  right: 16px;
-  /* display: flex;
+  top: 60px;
+  right: 10px;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
-  width: 160px;
-  height: 71px; */
+  width: 72px;
+  height: 32px;
 }
 
 .gallery-swiper {
-  /* position: relative;
+  position: relative;
   width: 100%;
   height: auto;
-  overflow: visible; */
+  overflow: visible;
 }
 
 .gallery-swiper-wrapper {
@@ -35,7 +35,6 @@
   /* padding-top: 53px;
   padding-bottom: 53px; */
 }
-
 .gallery-swiper-slide {
   display: flex;
   align-items: center;
@@ -185,9 +184,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 16px;
-    width: 160px;
-    height: 71px;
+    gap: 8px;
+    width: 72px;
+    height: 32px;
   }
 
   .gallery-swiper-button-prev,

@@ -32,30 +32,26 @@ const swiperGallery = new Swiper('.gallery-swiper', {
       const prevSlide = allSlides[this.previousIndex];
       const nextSlide = allSlides[this.activeIndex + 1];
 
-      // Повертаємо всі слайди в початкове положення
       allSlides.forEach(slide => {
         slide.style.transform = 'translateY(0)';
         slide.style.opacity = '0.6';
         slide.style.zIndex = '0';
       });
 
-      // Для активного слайда: підняти його на 56px
       activeSlide.style.transform = 'translateY(-56px)';
-      activeSlide.style.zIndex = '2'; // Підвищуємо на рівень 2 для активації
-      activeSlide.style.opacity = '1'; // Повна прозорість для активного слайда
+      activeSlide.style.zIndex = '2';
+      activeSlide.style.opacity = '1';
 
-      // Для попереднього слайда: опустити його на 56px
       if (prevSlide) {
         prevSlide.style.transform = 'translateY(56px)';
-        prevSlide.style.opacity = '0.6'; // Менше помітний
-        prevSlide.style.zIndex = '1'; // Попередній слайд на рівні 1
+        prevSlide.style.opacity = '0.6';
+        prevSlide.style.zIndex = '1';
       }
 
-      // Для наступного слайда: опустити його на 56px
       if (nextSlide) {
         nextSlide.style.transform = 'translateY(56px)';
-        nextSlide.style.opacity = '0.6'; // Менше помітний
-        nextSlide.style.zIndex = '1'; // Наступний слайд на рівні 1
+        nextSlide.style.opacity = '0.6';
+        nextSlide.style.zIndex = '1';
       }
     },
   },
