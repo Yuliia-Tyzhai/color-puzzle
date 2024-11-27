@@ -37,6 +37,7 @@
   position: relative;
 }
 .faq-question-text {
+  color: #020202;
   background: transparent;
   border: none;
   text-align: start;
