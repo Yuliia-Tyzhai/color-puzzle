@@ -1,6 +1,7 @@
 <!-- ================ GALLERY ================ -->
 <section id="gallery">
   <div class="container gallery-container background">
+    <div class="gallery-background-img"></div>
     <h2 class="title gallery-title">Gallery</h2>
 
     <div class="gallery-icons-arrows">
@@ -9,7 +10,7 @@
         class="swiper-button-prev gallery-swiper-button-prev"
       >
         <svg class="gallery-icon-left" width="24" height="23">
-          <use href="/img/sprite.svg#icon-arrow-left-right"></use>
+          <use href="./img/sprite.svg#icon-arrow-left-right"></use>
         </svg>
       </button>
       <button
@@ -34,15 +35,15 @@
               "
             />
             <img
-              loading="lazy"
               srcset="
                 ./img/gallery/gallery-1-mob-min.png    1x,
-                ./img/gallery/gallery-1-mob@2x-min.png
+                ./img/gallery/gallery-1-mob@2x-min.png 2x
               "
               class="gallery-img"
-              alt="image1"
-              width="306"
-              height="542"
+              src="./img/gallery/gallery-1-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -51,16 +52,20 @@
             ><source
               media="(min-width: 1200px)"
               srcset="
-                /img/gallery/gallery-2-desk-min.png    1x,
-                /img/gallery/gallery-2-desk@2x-min.png 2x
+                ./img/gallery/gallery-2-desk-min.png    1x,
+                ./img/gallery/gallery-2-desk@2x-min.png 2x
               "
             />
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-2-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="
+                ./img/gallery/gallery-2-mob-min.png    1x,
+                ./img/gallery/gallery-2-mob@2x-min.png 2x
+              "
+              src="./img/gallery/gallery-2-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -69,16 +74,20 @@
             ><source
               media="(min-width: 1200px)"
               srcset="
-                /img/gallery/gallery-3-desk-min.png    1x,
-                /img/gallery/gallery-3-desk@2x-min.png 2x
+                ./img/gallery/gallery-3-desk-min.png    1x,
+                ./img/gallery/gallery-3-desk@2x-min.png 2x
               "
             />
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-3-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="
+                ./img/gallery/gallery-3-mob-min.png    1x,
+                ./img/gallery/gallery-3-mob@2x-min.png 2x
+              "
+              src="./img/gallery/gallery-3-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -93,10 +102,14 @@
             />
             <img
               class="gallery-img"
+              srcset="
+                ./img/gallery/gallery-4-mob-min.png    1x,
+                ./img/gallery/gallery-4-mob@2x-min.png 2x
+              "
               src="/img/gallery/gallery-4-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
