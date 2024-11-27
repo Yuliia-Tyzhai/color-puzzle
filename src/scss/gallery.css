@@ -23,7 +23,7 @@
 
 .gallery-container .gallery-swiper {
   position: relative;
-  width: 75%; /* коли змінити % звужується відстань між слайдами */
+  width: 75.5%; /* коли змінити % звужується відстань між слайдами */
   height: 298px;
   overflow: visible;
   padding-top: 56px;
