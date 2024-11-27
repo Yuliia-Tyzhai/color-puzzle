@@ -3,8 +3,8 @@ import 'swiper/swiper-bundle.css';
 
 const swiperGallery = new Swiper('.gallery-swiper', {
   navigation: {
-    nextEl: '.gallery-swiper-button-prev',
-    prevEl: '.gallery-swiper-button-next',
+    nextEl: '.gallery-button-prev',
+    prevEl: '.gallery-button-next',
   },
 
   centeredSlides: true,
@@ -28,9 +28,7 @@ const swiperGallery = new Swiper('.gallery-swiper', {
 
       // console.log(allSlides, initialSlide);
 
-      initialSlide.style.transform = 'translateY(-56px)';
       initialSlide.style.opacity = '1';
-      initialSlide.style.zIndex = '2';
       placeSlides(this.activeIndex, allSlides);
     },
 
@@ -48,20 +46,17 @@ function updateSlideStyles(swiper) {
   allSlides.forEach(slide => {
     slide.style.transform = 'translateY(0)';
     slide.style.opacity = '0.6';
-    slide.style.zIndex = '0';
   });
 
   // Стиль для активного слайда
   activeSlide.style.transform = 'translateY(-56px)';
   activeSlide.style.opacity = '1';
-  activeSlide.style.zIndex = '2';
 
   // Стиль для наступних слайдів (від індексу 1 і далі)
   for (let i = swiper.activeIndex + 1; i < allSlides.length; i++) {
     const nextSlide = allSlides[i];
     nextSlide.style.transform = 'translateY(56px)';
     nextSlide.style.opacity = '0.6';
-    nextSlide.style.zIndex = '1';
   }
 }
 
