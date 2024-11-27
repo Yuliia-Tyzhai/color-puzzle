@@ -1,10 +1,20 @@
-.icons-arrows {
-  display: none;
+.gallery-icons-arrows {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
+.gallery-swiper-button-prev {
+  background-image: url('../img/gallery/Left-Arrow-Icon.svg') !important;
+}
+
+.gallery-swiper-button-next {
+  background-image: url('../img/gallery/Right-Arrow-Icon.svg') !important;
 }
 
 .gallery-container.container {
@@ -15,19 +25,6 @@
 
 .gallery-title {
   margin-bottom: 53px;
-}
-
-.gallery-icons-arrows {
-  position: absolute;
-  top: 60px;
-  right: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
-  width: 72px;
-  height: 32px;
 }
 
 .gallery-swiper {
@@ -92,7 +89,7 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.gallery-swiper-button-prev,
+/* .gallery-swiper-button-prev,
 .gallery-swiper-button-next {
   display: flex;
   align-items: center;
@@ -104,14 +101,7 @@
   width: 32px;
   height: 32px;
   background: #ffffff;
-}
-
-.gallery-icon-left,
-.gallery-icon-right {
-  stroke: black;
-  width: 32px;
-  height: 32px;
-}
+} */
 
 @media screen and (min-width: 1200px) {
   .gallery-title {
@@ -188,17 +178,18 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  .gallery-icons-arrows {
+  .icons-arrows.gallery-icons-arrows {
+    position: absolute;
+    top: 60px;
+    right: 80px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 8px;
-    width: 72px;
-    height: 32px;
+    gap: 16px;
   }
 
-  .gallery-swiper-button-prev,
+  /* .gallery-swiper-button-prev,
   .gallery-swiper-button-next {
     display: flex;
     align-items: center;
@@ -210,12 +201,5 @@
     width: 72px;
     height: 71px;
     background: #ffffff;
-  }
-
-  .gallery-icon-left,
-  .gallery-icon-right {
-    stroke: black;
-    width: 32px;
-    height: 32px;
-  }
+  } */
 }
