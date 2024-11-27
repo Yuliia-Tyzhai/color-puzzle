@@ -76,6 +76,9 @@ header .header-container {
     padding: 10px 0;
     transition: color 0.3s ease;
   }
+  .nav-list-item a.active {
+    color: #8a9ace;
+  }
   .nav-list-item a:hover {
     color: #8a9ace;
   }
