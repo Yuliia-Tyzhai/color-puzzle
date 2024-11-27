@@ -38,7 +38,7 @@
        top: 50%;
        left: 0; 
        transform: translateX(-50%);
-       margin: 120px 89px 230px 40px;
+       margin: 288px 0px 213px 72px;
       }
    
         .swiper-pagination-bullet {
