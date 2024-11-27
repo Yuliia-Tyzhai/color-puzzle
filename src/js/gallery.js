@@ -1,6 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
+const prevBtn = document.querySelector('.js-button-prev');
+const nextBtn = document.querySelector('.js-button-next');
+
 const swiperGallery = new Swiper('.gallery-swiper', {
   navigation: {
     nextEl: '.gallery-button-prev',
@@ -23,13 +26,10 @@ const swiperGallery = new Swiper('.gallery-swiper', {
 
   on: {
     init() {
-      const allSlides = this.slides;
-      const initialSlide = allSlides[this.activeIndex];
-
-      // console.log(allSlides, initialSlide);
-
+      const initialSlide = this.slides[this.activeIndex];
+      nextBtn.disabled = true;
       initialSlide.style.opacity = '1';
-      placeSlides(this.activeIndex, allSlides);
+      updateSlideStyles(this);
     },
 
     slideChange() {
@@ -40,80 +40,30 @@ const swiperGallery = new Swiper('.gallery-swiper', {
 
 function updateSlideStyles(swiper) {
   const allSlides = swiper.slides;
-  const activeSlide = allSlides[swiper.activeIndex];
+  const activeIndex = swiper.activeIndex;
 
-  // Очищаємо стилі для всіх слайдів
   allSlides.forEach(slide => {
     slide.style.transform = 'translateY(0)';
     slide.style.opacity = '0.6';
   });
 
-  // Стиль для активного слайда
-  activeSlide.style.transform = 'translateY(-56px)';
+  const activeSlide = allSlides[activeIndex];
   activeSlide.style.opacity = '1';
+  activeSlide.style.transform = 'translateY(0)';
 
-  // Стиль для наступних слайдів (від індексу 1 і далі)
-  for (let i = swiper.activeIndex + 1; i < allSlides.length; i++) {
+  for (let i = activeIndex - 1, distanceY = 56; i >= 0; i--, distanceY += 56) {
+    const prevSlide = allSlides[i];
+    prevSlide.style.transform = `translateY(${distanceY}px)`;
+  }
+
+  for (
+    let i = activeIndex + 1, distanceY = 56;
+    i < allSlides.length;
+    i++, distanceY += 56
+  ) {
     const nextSlide = allSlides[i];
-    nextSlide.style.transform = 'translateY(56px)';
-    nextSlide.style.opacity = '0.6';
+    nextSlide.style.transform = `translateY(${distanceY}px)`;
   }
 }
 
-function placeSlides(slideIn, allSlides) {
-  console.log(allSlides);
-  console.log(slideIn);
-}
-
-// const allSlides = this.slides;
-// const activeSlide = allSlides[this.activeIndex];
-// const prevSlide = allSlides[this.previousIndex];
-// const prevPrevSlide = allSlides[this.activeIndex - 2];
-// const nextSlide = allSlides[this.activeIndex + 2];
-// const activeIndex = this.activeIndex - 1;
-// console.log(allSlides);
-
-// console.log(prevPrevSlide, prevSlide, activeSlide, nextSlide);
-
-// allSlides.forEach(slide => {
-//   slide.style.transform = 'translateY(0)';
-//   slide.style.opacity = '0.6';
-//   slide.style.zIndex = '0';
-// });
-
-// const activeSlide = allSlides[activeIndex];
-// if (activeSlide) {
-//   activeSlide.style.transform = 'translateY(-56px)';
-//   activeSlide.style.opacity = '1';
-//   activeSlide.style.zIndex = '2';
-// }
-
-// Стилі для слайдів навколо активного
-// const prevSlide = allSlides[activeIndex - 1];
-// const nextSlide = allSlides[activeIndex + 1];
-// const prevPrevSlide = allSlides[activeIndex - 2];
-// const nextNextSlide = allSlides[activeIndex + 2];
-
-// if (prevSlide) {
-//   prevSlide.style.transform = 'translateY(0)';
-//   prevSlide.style.opacity = '0.6';
-//   prevSlide.style.zIndex = '1';
-// }
-
-// if (nextSlide) {
-//   nextSlide.style.transform = 'translateY(0)';
-//   nextSlide.style.opacity = '0.6';
-//   nextSlide.style.zIndex = '1';
-
-//   if (prevPrevSlide) {
-//     prevSlide.style.transform = 'translateY(56px)';
-//     prevSlide.style.opacity = '0.6';
-//     prevSlide.style.zIndex = '1';
-//   }
-
-//   if (nextNextSlide) {
-//     nextSlide.style.transform = 'translateY(56px)';
-//     nextSlide.style.opacity = '0.6';
-//     nextSlide.style.zIndex = '1';
-//   }
-// }
+console.log(prevBtn, nextBtn);

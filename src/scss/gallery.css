@@ -47,6 +47,7 @@ body {
   height: 100%;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -70,6 +71,13 @@ body {
   background-color: #fff;
   width: 32px;
   height: 32px;
+}
+
+.gallery-button-next:disabled,
+.gallery-button-prev:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .gallery-icon-left,
