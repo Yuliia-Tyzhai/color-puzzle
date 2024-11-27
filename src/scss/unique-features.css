@@ -119,12 +119,12 @@
 }
 
 .features-swiper-slide:nth-child(1) {
-  background-image: url(../img/unique-features/unique-features-mob-1.svg);
+  background: url(../img/unique-features/unique-features-mob-1.svg);
   fill: #ffd3da;
   stroke-width: 8px;
   stroke: #fff;
-  width: 276px;
-  height: 276px;
+  width: 276.1px;
+  height: 276.1px;
   transform: rotate(11deg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -203,13 +203,15 @@
 
 @media screen and (min-width: 1200px) {
   .features-title {
-    margin-bottom: 56px;
+    margin-bottom: 0px;
     text-align: center;
   }
 
   .features-swiper-wrapper {
-    padding-top: 56px;
-    padding-bottom: 77px;
+    padding-top: 0px;
+    margin-right: 0px;
+    padding-left: 140px;
+    padding-bottom: 17px;
   }
 
   .features-swiper-slide h3 {
@@ -231,8 +233,8 @@
 
   .features-swiper-slide:nth-child(1) {
     background-image: url(../img/unique-features/unique-features-desk-1.svg);
-    width: 689px;
-    height: 688px;
+    width: 762px;
+    height: 693px;
     transform: rotate(11deg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -241,8 +243,8 @@
 
   .features-swiper-slide:nth-child(2) {
     background-image: url(../img/unique-features/unique-features-desk-2.svg);
-    width: 640px;
-    height: 640px;
+    width: 724px;
+    height: 813px;
     transform: rotate(-24deg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -251,8 +253,8 @@
 
   .features-swiper-slide:nth-child(3) {
     background-image: url(../img/unique-features/unique-features-desk-3.svg);
-    width: 640px;
-    height: 640px;
+    width: 710px;
+    height: 710px;
     transform: rotate(-84deg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -261,8 +263,8 @@
 
   .features-swiper-slide:nth-child(4) {
     background-image: url(../img/unique-features/unique-features-desk-4.svg);
-    width: 640px;
-    height: 640px;
+    width: 764px;
+    height: 764px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -270,8 +272,8 @@
 
   .features-swiper-slide:nth-child(5) {
     background-image: url(../img/unique-features/unique-features-desk-5.svg);
-    width: 640px;
-    height: 640px;
+    width: 789px;
+    height: 790px;
     transform: rotate(-31deg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -284,7 +286,7 @@
     top: 50%;
     left: 0;
     transform: translateX(-50%);
-    margin: 120px 89px 230px 40px;
+    margin: 288px 0px 213px 40px;
   }
 
   .swiper-pagination-bullet {

@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 .gallery-container.container {
   padding-top: 56px;
   padding-bottom: 112px;
@@ -111,8 +112,8 @@ body {
         left 52px / 280.45px 119.25px,
       url('/img/background/icons/gallery-arrowLeft-desk.svg') no-repeat top
         408.75px left 72.06px / 288.11px 348.66px,
-      url('../img/background/icons/gallery-arrowRight-desk.svg') no-repeat
-        bottom 295.08px right 60.14px / 287.95px 350.49px;
+      url('/img/background/icons/gallery-arrowRight-desk.svg') no-repeat bottom
+        295.08px right 60.14px / 287.95px 350.49px;
   }
 
   .gallery-title {
@@ -132,12 +133,6 @@ body {
     top: 96px;
     right: 72px;
     gap: 16px;
-  }
-
-  .gallery-button-next,
-  .gallery-button-prev {
-    width: 72px;
-    height: 71px;
   }
 
   .gallery-icon-left,
