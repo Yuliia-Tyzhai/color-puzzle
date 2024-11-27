@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/color-puzzle/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/color-puzzle/assets/vendor-c12d68e1.js">
     <link rel="stylesheet" href="/color-puzzle/assets/vendor-db544325.css">
-    <link rel="stylesheet" href="/color-puzzle/assets/styles-8b376320.css">
+    <link rel="stylesheet" href="/color-puzzle/assets/styles-25419114.css">
   </head>
   <body>
     <!-- ================ HEADER Menu ================ -->
@@ -153,17 +153,25 @@
       <!-- ================ GALLERY ================ -->
 <section id="gallery">
   <div class="container gallery-container background">
+    <div class="gallery-background-img"></div>
     <h2 class="title gallery-title">Gallery</h2>
 
-    <div class="icons-arrows gallery-icons-arrows">
-      <button
-        type="button"
-        class="swiper-button-prev gallery-swiper-button-prev button-1"
-      ></button>
-      <button
-        type="button"
-        class="swiper-button-next gallery-swiper-button-next button-2"
-      ></button>
+    <div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="gallery-navigation">
+      <button type="button" class="gallery-button-prev js-button-prev">
+        <svg class="gallery-icon-left" width="24" height="23">
+          <use href="/color-puzzle/assets/sprite-429eba17.svg#icon-arrow-left-right"></use>
+        </svg>
+      </button>
+      <button type="button" class="gallery-button-next js-button-next">
+        <svg class="gallery-icon-right" width="24" height="23">
+          <use href="/color-puzzle/assets/sprite-429eba17.svg#icon-arrow-left-right"></use>
+        </svg>
+      </button>
     </div>
 
     <div class="swiper gallery-swiper">
@@ -175,12 +183,12 @@
               srcset="/color-puzzle/assets/gallery-1-desk-min-4ea137b6.png 1x, /color-puzzle/assets/gallery-1-desk@2x-min-5ca01c56.png 2x"
             />
             <img
-              loading="lazy"
-              srcset="/color-puzzle/assets/gallery-1-mob-min-02debaf3.png 1x, /color-puzzle/assets/gallery-1-mob@2x-min-db18bad0.png "
+              srcset="/color-puzzle/assets/gallery-1-mob-min-02debaf3.png 1x, /color-puzzle/assets/gallery-1-mob@2x-min-db18bad0.png 2x"
               class="gallery-img"
-              alt="image1"
-              width="306"
-              height="542"
+              src="/color-puzzle/assets/gallery-1-mob-min-02debaf3.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -192,10 +200,11 @@
             />
             <img
               class="gallery-img"
-              src="/color-puzzle/assets/gallery-2-desk-min-8e6e7b07.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="/color-puzzle/assets/gallery-2-mob-min-580befa2.png 1x, /color-puzzle/assets/gallery-2-mob@2x-min-4d153018.png 2x"
+              src="/color-puzzle/assets/gallery-2-mob-min-580befa2.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -207,10 +216,11 @@
             />
             <img
               class="gallery-img"
-              src="/color-puzzle/assets/gallery-3-desk-min-45175eac.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="/color-puzzle/assets/gallery-3-mob-min-cf6ba2fa.png 1x, /color-puzzle/assets/gallery-3-mob@2x-min-d0474269.png 2x"
+              src="/color-puzzle/assets/gallery-3-mob-min-cf6ba2fa.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -222,26 +232,15 @@
             />
             <img
               class="gallery-img"
+              srcset="/color-puzzle/assets/gallery-4-mob-min-041655f3.png 1x, /color-puzzle/assets/gallery-4-mob@2x-min-9b996820.png 2x"
               src="/color-puzzle/assets/gallery-4-desk-min-b325868b.png"
-              alt="image1"
-              width="306"
-              height="542"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
       </div>
-      <!-- <div class="btns-container">
-        <div class="swiper-button-prev gallery-swiper-button-prev">
-          <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/img/sprite1.svg#icon-Left-Arrow-Icon"></use>
-          </svg>
-        </div>
-        <div class="swiper-button-next gallery-swiper-button-next">
-          <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/img/sprite1.svg#icon-Right-Arrow-Icon"></use>
-          </svg>
-        </div>
-      </div> -->
     </div>
   </div>
 </section>
