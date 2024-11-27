@@ -209,6 +209,7 @@
 
   .features-swiper-wrapper {
     padding-top: 0px;
+    margin-right: 0px;
     padding-left: 140px;
     padding-bottom: 17px;
   }
@@ -285,7 +286,7 @@
     top: 50%;
     left: 0;
     transform: translateX(-50%);
-    margin: 288px 0px 213px 72px;
+    margin: 288px 0px 213px 48px;
   }
 
   .swiper-pagination-bullet {
