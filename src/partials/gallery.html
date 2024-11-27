@@ -1,17 +1,25 @@
 <!-- ================ GALLERY ================ -->
 <section id="gallery">
   <div class="container gallery-container background">
+    <div class="gallery-background-img"></div>
     <h2 class="title gallery-title">Gallery</h2>
 
-    <div class="icons-arrows gallery-icons-arrows">
-      <button
-        type="button"
-        class="swiper-button-prev gallery-swiper-button-prev button-1"
-      ></button>
-      <button
-        type="button"
-        class="swiper-button-next gallery-swiper-button-next button-2"
-      ></button>
+    <div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="gallery-navigation">
+      <button type="button" class="gallery-button-prev js-button-prev">
+        <svg class="gallery-icon-left" width="24" height="23">
+          <use href="./img/sprite.svg#icon-arrow-left-right"></use>
+        </svg>
+      </button>
+      <button type="button" class="gallery-button-next js-button-next">
+        <svg class="gallery-icon-right" width="24" height="23">
+          <use href="./img/sprite.svg#icon-arrow-left-right"></use>
+        </svg>
+      </button>
     </div>
 
     <div class="swiper gallery-swiper">
@@ -26,15 +34,15 @@
               "
             />
             <img
-              loading="lazy"
               srcset="
                 ./img/gallery/gallery-1-mob-min.png    1x,
-                ./img/gallery/gallery-1-mob@2x-min.png
+                ./img/gallery/gallery-1-mob@2x-min.png 2x
               "
               class="gallery-img"
-              alt="image1"
-              width="306"
-              height="542"
+              src="./img/gallery/gallery-1-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -43,16 +51,20 @@
             ><source
               media="(min-width: 1200px)"
               srcset="
-                /img/gallery/gallery-2-desk-min.png    1x,
-                /img/gallery/gallery-2-desk@2x-min.png 2x
+                ./img/gallery/gallery-2-desk-min.png    1x,
+                ./img/gallery/gallery-2-desk@2x-min.png 2x
               "
             />
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-2-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="
+                ./img/gallery/gallery-2-mob-min.png    1x,
+                ./img/gallery/gallery-2-mob@2x-min.png 2x
+              "
+              src="./img/gallery/gallery-2-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -61,16 +73,20 @@
             ><source
               media="(min-width: 1200px)"
               srcset="
-                /img/gallery/gallery-3-desk-min.png    1x,
-                /img/gallery/gallery-3-desk@2x-min.png 2x
+                ./img/gallery/gallery-3-desk-min.png    1x,
+                ./img/gallery/gallery-3-desk@2x-min.png 2x
               "
             />
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-3-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              srcset="
+                ./img/gallery/gallery-3-mob-min.png    1x,
+                ./img/gallery/gallery-3-mob@2x-min.png 2x
+              "
+              src="./img/gallery/gallery-3-mob-min.png"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
@@ -85,26 +101,18 @@
             />
             <img
               class="gallery-img"
+              srcset="
+                ./img/gallery/gallery-4-mob-min.png    1x,
+                ./img/gallery/gallery-4-mob@2x-min.png 2x
+              "
               src="/img/gallery/gallery-4-desk-min.png"
-              alt="image1"
-              width="306"
-              height="542"
+              alt="Gallery image"
+              width="136"
+              height="242"
             />
           </picture>
         </div>
       </div>
-      <!-- <div class="btns-container">
-        <div class="swiper-button-prev gallery-swiper-button-prev">
-          <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/img/sprite1.svg#icon-Left-Arrow-Icon"></use>
-          </svg>
-        </div>
-        <div class="swiper-button-next gallery-swiper-button-next">
-          <svg class="gallery-swiper-button" width="32" height="32">
-            <use href="/img/sprite1.svg#icon-Right-Arrow-Icon"></use>
-          </svg>
-        </div>
-      </div> -->
     </div>
   </div>
 </section>
