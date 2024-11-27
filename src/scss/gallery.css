@@ -135,6 +135,12 @@ body {
     gap: 16px;
   }
 
+  .gallery-button-next,
+  .gallery-button-prev {
+    width: 72px;
+    height: 71px;
+  }
+
   .gallery-icon-left,
   .gallery-icon-right {
     width: 30px;
