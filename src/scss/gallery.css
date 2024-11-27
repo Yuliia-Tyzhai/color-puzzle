@@ -24,7 +24,7 @@
 .gallery-swiper {
   position: relative;
   width: 100%;
-  height: auto;*/
+  height: auto;
   /* overflow: visible; */
 }
 
@@ -120,9 +120,8 @@
   height: 23px;
 }
 .gallery-icon-left {
-  transform: rotate(180deg) !important;
+  transform: rotate(180deg);
 }
-
 
 @media screen and (min-width: 1200px) {
   .gallery-title {
@@ -229,4 +228,4 @@
     width: 32px;
     height: 32px;
   }
-}}
+}
