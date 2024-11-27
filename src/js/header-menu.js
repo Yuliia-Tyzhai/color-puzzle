@@ -1,13 +1,15 @@
+// Header and navigation links
 const header = document.querySelector('.js-header');
 const headerLinks = document.querySelectorAll('.js-nav-menu a');
 const sections = document.querySelectorAll('section');
-console.log(sections);
 
+// Mobile menu elements
 const burgerMenu = document.querySelector('.js-burger-menu');
 const mobMenu = document.querySelector('.js-mob-menu');
 const menuCloseBtn = document.querySelector('.js-close-btn');
 const navMobLinks = mobMenu.querySelectorAll('a');
 
+// Open and close mobile menu
 function openMenu() {
   setTimeout(() => {
     mobMenu.classList.add('is-open');
@@ -18,13 +20,14 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('no-scroll');
   setTimeout(() => {
-    mobMenu.classList.remove('is-open', 'is-closing'); // Забираємо класи після завершення анімації
+    mobMenu.classList.remove('is-open', 'is-closing'); // Remove classes after animation
   }, 300);
 }
 
 burgerMenu.addEventListener('click', openMenu);
 menuCloseBtn.addEventListener('click', closeMenu);
 
+// Scroll to section on link click
 function scrollToSection(link) {
   const targetId = link.getAttribute('href').slice(1);
   const targetSectionTop = document
@@ -54,7 +57,7 @@ navMobLinks.forEach(link => {
   });
 });
 
-// active header link
+// Active header link (IntersectionObserver)
 const observerOptions = {
   root: null,
   rootMargin: `-${header.offsetHeight}px 0px 0px 0px`,
@@ -81,3 +84,15 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach(section => observer.observe(section));
+
+// Animation for hero words
+const changeWords = document.querySelector('.change-words');
+const spans = changeWords.querySelectorAll('span');
+
+let index = 0;
+
+setInterval(() => {
+  spans[index].classList.remove('active');
+  index = (index + 1) % spans.length;
+  spans[index].classList.add('active');
+}, 2000);

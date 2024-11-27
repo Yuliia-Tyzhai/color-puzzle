@@ -28,6 +28,7 @@
   border: 1px solid #020202;
   padding: 32px 24px;
   background: #fff;
+  color: #020202;
 }
 .faq-item:not(:last-child) {
   margin-bottom: 23px;
