@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
        top: 50%;
        left: 0; 
        transform: translateX(-50%);
-       margin: 288px 0px 213px 48px;
+       margin: 288px 0px 213px 40px;
       }
    
         .swiper-pagination-bullet {
