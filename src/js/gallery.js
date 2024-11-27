@@ -8,16 +8,17 @@ const swiperGallery = new Swiper('.gallery-swiper', {
   //   spaceBetween: 36,
 
   navigation: {
-    nextEl: '.gallery-swiper-button-next',
-    prevEl: '.gallery-swiper-button-prev',
+    nextEl: '.gallery-swiper-button-prev',
+    prevEl: '.gallery-swiper-button-next',
   },
 
   centeredSlides: true,
+  slidesPerView: 1.5,
 
   breakpoints: {
     320: {
       slidesPerView: 1.5,
-      spaceBetween: 0,
+      spaceBetween: 24,
     },
     1200: {
       slidesPerView: 3,
@@ -30,7 +31,9 @@ const swiperGallery = new Swiper('.gallery-swiper', {
       const allSlides = this.slides;
       const activeSlide = allSlides[this.activeIndex];
       const prevSlide = allSlides[this.previousIndex];
-      const nextSlide = allSlides[this.activeIndex + 1];
+      const nextSlide = allSlides[this.activeIndex + 2];
+      // const secActivSlide = swiper.slides[0];
+      // console.log(secActivSlide);
 
       allSlides.forEach(slide => {
         slide.style.transform = 'translateY(0)';
@@ -39,14 +42,20 @@ const swiperGallery = new Swiper('.gallery-swiper', {
       });
 
       activeSlide.style.transform = 'translateY(-56px)';
-      activeSlide.style.zIndex = '2';
       activeSlide.style.opacity = '1';
+      activeSlide.style.zIndex = '2';
 
       if (prevSlide) {
-        prevSlide.style.transform = 'translateY(56px)';
+        // prevSlide.style.transform = 'translateY(0)';
         prevSlide.style.opacity = '0.6';
         prevSlide.style.zIndex = '1';
       }
+
+      // if (secActivSlide) {
+      //   prevSlide.style.transform = 'translateY(56px)';
+      //   prevSlide.style.opacity = '0.6';
+      //   prevSlide.style.zIndex = '1';
+      // }
 
       if (nextSlide) {
         nextSlide.style.transform = 'translateY(56px)';
