@@ -1,18 +1,17 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-const swiperGallery = new Swiper('.gallery-swiper', {
-  //   direction: 'horizontal',
-  //   loap: true,
-  //   slidesPerView: '3',
-  //   spaceBetween: 36,
+const prevBtn = document.querySelector('.js-button-prev');
+const nextBtn = document.querySelector('.js-button-next');
 
+const swiperGallery = new Swiper('.gallery-swiper', {
   navigation: {
-    nextEl: '.gallery-swiper-button-next',
-    prevEl: '.gallery-swiper-button-prev',
+    nextEl: '.gallery-button-prev',
+    prevEl: '.gallery-button-next',
   },
 
   centeredSlides: true,
+  slidesPerView: 1.5,
 
   breakpoints: {
     320: {
@@ -26,33 +25,45 @@ const swiperGallery = new Swiper('.gallery-swiper', {
   },
 
   on: {
-    slideChange: function () {
-      const allSlides = this.slides;
-      const activeSlide = allSlides[this.activeIndex];
-      const prevSlide = allSlides[this.previousIndex];
-      const nextSlide = allSlides[this.activeIndex + 1];
+    init() {
+      const initialSlide = this.slides[this.activeIndex];
+      nextBtn.disabled = true;
+      initialSlide.style.opacity = '1';
+      updateSlideStyles(this);
+    },
 
-      allSlides.forEach(slide => {
-        slide.style.transform = 'translateY(0)';
-        slide.style.opacity = '0.6';
-        slide.style.zIndex = '0';
-      });
-
-      activeSlide.style.transform = 'translateY(-56px)';
-      activeSlide.style.zIndex = '2';
-      activeSlide.style.opacity = '1';
-
-      if (prevSlide) {
-        prevSlide.style.transform = 'translateY(56px)';
-        prevSlide.style.opacity = '0.6';
-        prevSlide.style.zIndex = '1';
-      }
-
-      if (nextSlide) {
-        nextSlide.style.transform = 'translateY(56px)';
-        nextSlide.style.opacity = '0.6';
-        nextSlide.style.zIndex = '1';
-      }
+    slideChange() {
+      updateSlideStyles(this);
     },
   },
 });
+
+function updateSlideStyles(swiper) {
+  const allSlides = swiper.slides;
+  const activeIndex = swiper.activeIndex;
+
+  allSlides.forEach(slide => {
+    slide.style.transform = 'translateY(0)';
+    slide.style.opacity = '0.6';
+  });
+
+  const activeSlide = allSlides[activeIndex];
+  activeSlide.style.opacity = '1';
+  activeSlide.style.transform = 'translateY(0)';
+
+  for (let i = activeIndex - 1, distanceY = 56; i >= 0; i--, distanceY += 56) {
+    const prevSlide = allSlides[i];
+    prevSlide.style.transform = `translateY(${distanceY}px)`;
+  }
+
+  for (
+    let i = activeIndex + 1, distanceY = 56;
+    i < allSlides.length;
+    i++, distanceY += 56
+  ) {
+    const nextSlide = allSlides[i];
+    nextSlide.style.transform = `translateY(${distanceY}px)`;
+  }
+}
+
+console.log(prevBtn, nextBtn);
