@@ -1,3 +1,20 @@
+.unique-features-container {
+  position: relative;
+}
+
+/* .about-background-img {
+  position: absolute;
+  inset: 0;
+  background: url('../img/unique-features/container-svg/puzzle-container-mob-4.svg')
+      no-repeat,
+    url('/img/background/icons/about-title-mob.svg') no-repeat top 54px left 4px /
+      203.58px 68px,
+    url('/img/background/icons/about-arrows-mob.svg') no-repeat top 312.68px
+      left 139.55px / 82.33px 115.77px,
+    url('/img/background/icons/about-line-mob.svg') no-repeat bottom left 115px /
+      92px 24px;
+} */
+
 .features-title {
   margin-bottom: 56px;
   text-align: center;
@@ -21,9 +38,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   background-color: transparent;
   position: relative;
+  filter: drop-shadow(4px 4px 0px rgba(138, 154, 206, 0.5));
 }
 
 .text {
@@ -32,8 +50,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
-  width: 180px;
-  height: 88px;
   font-weight: 300;
   font-size: 12px;
   line-height: 1.5;
@@ -43,41 +59,70 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 .text-1 {
-  padding: 90px 20px 115px 93px;
+  padding: 90px 21px 116px 93px;
+  width: 100%;
+  height: auto;
+  max-width: 180px;
 }
 
 .text-2 {
-  padding: 117px 36px 125px 111px;
+  padding: 127px 75px 120px 100px;
+  width: 100%;
+  height: auto;
+  max-width: 188px;
 }
 
 .text-3 {
-  padding: 110px 96px 130px 96px;
+  padding: 110px 45px 130px 60px;
+  width: 100%;
+  height: auto;
+  max-width: 189px;
 }
 
 .text-4 {
-  padding: 100px 95px 119px 50px;
+  padding: 100px 95px 119px 24px;
+  width: 100%;
+  height: auto;
+  max-width: 178px;
 }
 
 .text-5 {
-  padding: 119px 66px 58px 17px;
+  padding: 119px 57px 58px 25px;
+  width: 100%;
+  height: auto;
+  max-width: 206px;
 }
 
 .features-swiper-slide h3 {
+  font-weight: 500;
   font-size: 12px;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
   width: 100%;
 }
 
 .features-swiper-slide p {
+  font-weight: 300;
   font-size: 12px;
   width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
 }
 
 .features-swiper-slide:nth-child(1) {
-  background-image: url(../img/unique-features/unique-features-mob-1.png);
+  background-image: url(../img/unique-features/unique-features-mob-1.svg);
+  fill: #ffd3da;
+  stroke-width: 8px;
+  stroke: #fff;
   width: 276px;
   height: 276px;
   transform: rotate(11deg);
@@ -87,9 +132,9 @@
 }
 
 .features-swiper-slide:nth-child(2) {
-  background-image: url(../img/unique-features/unique-features-mob-2.png);
-  width: 276px;
-  height: 276px;
+  background-image: url(../img/unique-features/unique-features-mob-2.svg);
+  width: 286px;
+  height: 300px;
   transform: rotate(-4deg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -97,27 +142,27 @@
 }
 
 .features-swiper-slide:nth-child(3) {
-  background-image: url(../img/unique-features/unique-features-mob-3.png);
-  width: 276px;
-  height: 276px;
+  background-image: url(../img/unique-features/unique-features-mob-3.svg);
+  width: 270px;
+  height: 292px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .features-swiper-slide:nth-child(4) {
-  background-image: url(../img/unique-features/unique-features-mob-4.png);
-  width: 276px;
-  height: 276px;
+  background-image: url(../img/unique-features/unique-features-mob-4.svg);
+  width: 274px;
+  height: 316px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .features-swiper-slide:nth-child(5) {
-  background-image: url(../img/unique-features/unique-features-mob-5.png);
-  width: 276px;
-  height: 276px;
+  background-image: url(../img/unique-features/unique-features-mob-5.svg);
+  width: 261px;
+  height: 281px;
   transform: rotate(-3deg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -167,8 +212,25 @@
     padding-bottom: 77px;
   }
 
+  .features-swiper-slide h3 {
+    font-weight: 500;
+    font-size: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .features-swiper-slide p {
+    font-weight: 300;
+    font-size: 16px;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: normal;
+  }
+
   .features-swiper-slide:nth-child(1) {
-    background-image: url(../img/unique-features/unique-features-mob-1.png);
+    background-image: url(../img/unique-features/unique-features-desk-1.svg);
     width: 689px;
     height: 688px;
     transform: rotate(11deg);
@@ -178,7 +240,7 @@
   }
 
   .features-swiper-slide:nth-child(2) {
-    background-image: url(../img/unique-features/unique-features-mob-2.png);
+    background-image: url(../img/unique-features/unique-features-desk-2.svg);
     width: 640px;
     height: 640px;
     transform: rotate(-24deg);
@@ -188,7 +250,7 @@
   }
 
   .features-swiper-slide:nth-child(3) {
-    background-image: url(../img/unique-features/unique-features-mob-3.png);
+    background-image: url(../img/unique-features/unique-features-desk-3.svg);
     width: 640px;
     height: 640px;
     transform: rotate(-84deg);
@@ -198,7 +260,7 @@
   }
 
   .features-swiper-slide:nth-child(4) {
-    background-image: url(../img/unique-features/unique-features-mob-4.png);
+    background-image: url(../img/unique-features/unique-features-desk-4.svg);
     width: 640px;
     height: 640px;
     background-size: contain;
@@ -207,7 +269,7 @@
   }
 
   .features-swiper-slide:nth-child(5) {
-    background-image: url(../img/unique-features/unique-features-mob-5.png);
+    background-image: url(../img/unique-features/unique-features-desk-5.svg);
     width: 640px;
     height: 640px;
     transform: rotate(-31deg);
@@ -235,5 +297,30 @@
     width: 265px;
     height: 144px;
     font-size: 16px;
+    max-width: 300px;
+  }
+
+  .text-1 {
+    padding: 259px 153px 345px 330px;
+  }
+
+  .text-2 {
+    padding: 300px 165px 320px 320px;
+    max-width: 258px;
+  }
+
+  .text-3 {
+    padding: 370px 220px 225px 235px;
+    max-width: 289px;
+  }
+
+  .text-4 {
+    padding: 180px 5px 220px 200px;
+    max-width: 245px;
+  }
+
+  .text-5 {
+    padding: 380px 200px 215px 255px;
+    max-width: 239px;
   }
 }
