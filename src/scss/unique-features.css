@@ -28,7 +28,7 @@
 
 .features-swiper-slide {
   text-align: left;
-  font-size: 18px;
+  /* font-size: 18px; */
   background: #fff;
   display: flex;
   justify-content: center;
@@ -37,7 +37,6 @@
   height: 100%;
   background-color: transparent;
   position: relative;
-  filter: drop-shadow(4px 4px 0px rgba(138, 154, 206, 0.5));
 }
 
 .text {
@@ -115,8 +114,7 @@
 }
 
 .features-swiper-slide:nth-child(1) {
-  background-image: url(/img/unique-features/new-svg/vector-mob-1.svg),
-    url(/img/unique-features/unique-features-mob-1.svg);
+  background-image: url(/img/unique-features/unique-features-mob-1.svg);
   width: 276.1px;
   height: 276.1px;
   background-size: contain;
@@ -124,9 +122,92 @@
   background-position: center;
 }
 
+.background-layer-1 {
+  background-image: url(/img/unique-features/new-svg/vector-mob-1.svg);
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-layer-2 {
+  background-image: url(../img/unique-features/new-svg/vector-mob-2.svg);
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-layer-3 {
+  background-image: url(../img/unique-features/new-svg/vector-mob-3.svg);
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-layer-4-left {
+  background-image: url(../img/unique-features/features-svg/vector-mob-left-4.svg);
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 49px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-layer-4-right {
+  background-image: url(../img/unique-features/features-svg/vector-mob-right-4.svg);
+  position: absolute;
+  top: -20px;
+  left: 180px;
+  right: 0;
+  bottom: 0;
+  width: 68px;
+  height: 65px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.background-layer-5 {
+  background-image: url(/img/unique-features/new-svg/vector-mob-5.svg);
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  right: 0;
+  bottom: 0;
+  width: 118px;
+  height: 55px;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 .features-swiper-slide:nth-child(2) {
-  background-image: url(/img/unique-features/new-svg/vector-mob-2.svg),
-    url(/img/unique-features/unique-features-mob-2.svg);
+  background-image: url(/img/unique-features/unique-features-mob-2.svg);
   width: 286px;
   height: 300px;
   background-size: contain;
@@ -135,8 +216,7 @@
 }
 
 .features-swiper-slide:nth-child(3) {
-  background-image: url(../img/unique-features/new-svg/vector-mob-3.svg),
-    url(/img/unique-features/unique-features-mob-3.svg);
+  background-image: url(/img/unique-features/unique-features-mob-3.svg);
   width: 270px;
   height: 292px;
   background-size: contain;
@@ -213,7 +293,7 @@
     padding-top: 0px;
     margin-right: 0px;
     padding-left: 140px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .features-swiper-slide h3 {
@@ -233,20 +313,93 @@
     word-break: normal;
   }
 
+  .background-layer-1 {
+    background-image: url(/img/unique-features/new-svg/vector-desk-1.svg);
+    position: absolute;
+    top: -60px;
+    left: 180px;
+    right: 0;
+    bottom: 0;
+    width: 762px;
+    height: 693px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .background-layer-2 {
+    background-image: url(../img/unique-features/new-svg/vector-desk-2.svg);
+    position: absolute;
+    top: 0;
+    left: 170px;
+    right: 0;
+    bottom: 0;
+    width: 738px;
+    height: 754px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .background-layer-3 {
+    background-image: url(../img/unique-features/new-svg/vector-desk-3.svg);
+    position: absolute;
+    top: -10px;
+    left: 110px;
+    right: 0;
+    bottom: 0;
+    width: 822px;
+    height: 827px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .background-layer-4-left,
+  .background-layer-4-right {
+    display: none;
+  }
+
+  .background-layer-4 {
+    background-image: url(../img/unique-features/new-svg/vector-desk-4.svg);
+    position: absolute;
+    top: -30px;
+    left: 700px;
+    right: 0;
+    bottom: 0;
+    width: 218px;
+    height: 209px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .background-layer-5 {
+    background-image: url(/img/unique-features/new-svg/vector-desk-5.svg);
+    position: absolute;
+    top: 0;
+    left: 550px;
+    right: 0;
+    bottom: 0;
+    width: 293px;
+    height: 136px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
   .features-swiper-slide:nth-child(1) {
-    background-image: url(../img/unique-features/new-svg/vector-desk-1.svg),
-      url(/img/unique-features/unique-features-desk-1.svg);
+    background-image: url(/img/unique-features/unique-features-desk-1.svg);
     width: 762px;
     height: 693px;
     transform: rotate(11deg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
   }
 
   .features-swiper-slide:nth-child(1):hover {
-    background-image: url(../img/unique-features/new-svg/vector-desk-1.svg),
-      url(/img/unique-features/desk-hever/hovers/features-img-hov-1.svg);
+    background-image: url(/img/unique-features/desk-hever/hovers/features-img-hov-1.svg);
     width: 762px;
     height: 693px;
     background-size: contain;
@@ -255,8 +408,7 @@
   }
 
   .features-swiper-slide:nth-child(2) {
-    background-image: url(../img/unique-features/new-svg/vector-desk-2.svg),
-      url(/img/unique-features/unique-features-desk-2.svg);
+    background-image: url(/img/unique-features/unique-features-desk-2.svg);
     width: 724px;
     height: 813px;
     transform: rotate(-24deg);
@@ -266,8 +418,7 @@
   }
 
   .features-swiper-slide:nth-child(2):hover {
-    background-image: url(../img/unique-features/new-svg/vector-desk-2.svg),
-      url(/img/unique-features/desk-hever/hovers/features-img-hov-2.svg);
+    background-image: url(/img/unique-features/desk-hever/hovers/features-img-hov-2.svg);
     width: 724px;
     height: 813px;
     background-size: contain;
@@ -276,8 +427,7 @@
   }
 
   .features-swiper-slide:nth-child(3) {
-    background-image: url(../img/unique-features/new-svg/vector-desk-3.svg),
-      url(/img/unique-features/unique-features-desk-3.svg);
+    background-image: url(/img/unique-features/unique-features-desk-3.svg);
     width: 710px;
     height: 710px;
     transform: rotate(-84deg);
@@ -287,8 +437,7 @@
   }
 
   .features-swiper-slide:nth-child(3):hover {
-    background-image: url(../img/unique-features/new-svg/vector-desk-3.svg),
-      url(/img/unique-features/desk-hever/hovers/features-img-hov-3.svg);
+    background-image: url(/img/unique-features/desk-hever/hovers/features-img-hov-3.svg);
     width: 710px;
     height: 710px;
     background-size: contain;
