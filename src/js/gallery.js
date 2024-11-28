@@ -1,8 +1,9 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-const prevBtn = document.querySelector('.js-button-prev');
-const nextBtn = document.querySelector('.js-button-next');
+const arrowBackgroundCont = document.querySelector('.js-background');
+
+let previousIndex = 0;
 
 const swiperGallery = new Swiper('.gallery-swiper', {
   navigation: {
@@ -27,13 +28,29 @@ const swiperGallery = new Swiper('.gallery-swiper', {
   on: {
     init() {
       const initialSlide = this.slides[this.activeIndex];
-      nextBtn.disabled = true;
       initialSlide.style.opacity = '1';
       updateSlideStyles(this);
     },
 
     slideChange() {
+      const currentIndex = this.activeIndex;
+
+      if (currentIndex > previousIndex) {
+        arrowBackgroundCont.classList.remove('gallery-background-img-left');
+        arrowBackgroundCont.classList.add('gallery-background-img');
+      } else if (currentIndex < previousIndex) {
+        arrowBackgroundCont.classList.remove('gallery-background-img-right');
+        arrowBackgroundCont.classList.add('gallery-background-img');
+
+        if (currentIndex === 0) {
+          arrowBackgroundCont.classList.remove('gallery-background-img');
+          arrowBackgroundCont.classList.add('gallery-background-img-left');
+        }
+      }
+
       updateSlideStyles(this);
+
+      previousIndex = currentIndex;
     },
   },
 });
@@ -41,6 +58,8 @@ const swiperGallery = new Swiper('.gallery-swiper', {
 function updateSlideStyles(swiper) {
   const allSlides = swiper.slides;
   const activeIndex = swiper.activeIndex;
+  const endOfSlides = allSlides.length - 1;
+  // console.log(allSlides, activeIndex, endOfSlides);
 
   allSlides.forEach(slide => {
     slide.style.transform = 'translateY(0)';
@@ -64,6 +83,9 @@ function updateSlideStyles(swiper) {
     const nextSlide = allSlides[i];
     nextSlide.style.transform = `translateY(${distanceY}px)`;
   }
-}
 
-console.log(prevBtn, nextBtn);
+  if (activeIndex === endOfSlides) {
+    arrowBackgroundCont.classList.remove('gallery-background-img');
+    arrowBackgroundCont.classList.add('gallery-background-img-right');
+  }
+}
