@@ -3,6 +3,7 @@
   padding-top: 56px;
   padding-bottom: 66px;
 }
+
 .hero-background-img {
   position: absolute;
   inset: 0;
@@ -10,8 +11,8 @@
   background: url('/img/background/icons/hero-man.svg') no-repeat top 240.68px
       right 19.21px,
     url('/img/background/icons/hero-rope-mob.svg') no-repeat top -4px right 15px,
-    url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 7px left
-      28px,
+    url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 11px left
+      128px,
     url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 153.87px
       left 105.6px;
   background-size: 28.79px 36.85px, 24px 259px, 63px 27px, 106.96px 37.13px;
@@ -69,10 +70,12 @@
 .slight-purple {
   color: #af25ff;
 }
+
 .pearch {
   color: #ff8e84;
   padding-right: 10px;
 }
+
 .google-btn {
   position: relative;
   z-index: 2;
@@ -88,17 +91,22 @@
   justify-content: space-between;
   gap: 5px;
 }
+
 .google-btn:hover {
   box-shadow: 4px 4px 0 0 #8a9ace;
   transform: scale(1.05);
 }
+
 .google-cont svg {
   display: block;
 }
+
 .google-cont svg:first-child {
   margin-bottom: 4px;
 }
+
 .hero-text {
+  padding-left: 38px;
   text-align: right;
 }
 
@@ -107,11 +115,11 @@
     padding-top: 172px;
     padding-bottom: 133px;
   }
+
   .hero-background-img {
     background: url('/img/background/icons/hero-man.svg') no-repeat top 310px
         right 86.9px,
-      url('../img/background/icons/hero-rope-desk.svg') no-repeat top -24px right
-        83px,
+      url('/img/background/icons/hero-rope-desk.svg') no-repeat top -24px right 83px,
       url('/img/background/icons/hero-line-mob.svg') no-repeat bottom 21px left
         271px,
       url('/img/background/icons/hero-arrows-mob.svg') no-repeat bottom 226.35px
@@ -120,21 +128,26 @@
     background-size: 56.1px 76.66px, 26px 372.05px, 139px 61px,
       419.85px 145.75px;
   }
+
   .hero-title {
     display: inline-block;
     font-weight: 700;
     font-size: 48px;
   }
+
   .hero-container span {
     font-weight: 700;
     font-size: 48px;
   }
+
   .hero-container .hover:hover {
     transform: translateY(-30px);
   }
+
   .end-span {
     margin-left: 16px;
   }
+
   .google-btn {
     margin-bottom: 0;
     width: 306px;
@@ -142,21 +155,26 @@
     padding: 16px 51px;
     gap: 14.02px;
   }
+
   .google-btn img {
     width: 41px;
     height: 44px;
   }
+
   .google-cont svg:first-child {
     margin-bottom: 6.7px;
   }
+
   .get-it {
     width: 68px;
     height: 11px;
   }
+
   .google-play {
     width: 149px;
     height: 29px;
   }
+
   .hero-text {
     margin-top: 120px;
     margin-left: 332px;
@@ -165,7 +183,6 @@
   }
 }
 
-/* для aнімації зміни слів */
 .change-words {
   position: relative;
   height: 4em;

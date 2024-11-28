@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden;
-}
-
 .gallery-container.container {
   padding-top: 56px;
   padding-bottom: 112px;
@@ -10,7 +6,7 @@ body {
   overflow: hidden;
 }
 
-.gallery-background-img {
+.gallery-background-img-mobile {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -85,6 +81,8 @@ body {
 .gallery-icon-right {
   fill: transparent;
   stroke: #020202;
+  width: 14px;
+  height: 14px;
 }
 
 .gallery-icon-right {
@@ -109,9 +107,29 @@ body {
     background: url('/img/background/icons/gallery-man.svg') no-repeat top 22px
         right 75px / 62px 74px,
       url('/img/background/icons/gallery-title-desk.svg') no-repeat top 68px
+        left 52px / 280.45px 119.25px;
+  }
+
+  .gallery-background-img-left {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: url('/img/background/icons/gallery-man.svg') no-repeat top 22px
+        right 75px / 62px 74px,
+      url('/img/background/icons/gallery-title-desk.svg') no-repeat top 68px
         left 52px / 280.45px 119.25px,
       url('/img/background/icons/gallery-arrowLeft-desk.svg') no-repeat top
-        408.75px left 72.06px / 288.11px 348.66px,
+        408.75px left 72.06px / 288.11px 348.66px;
+  }
+
+  .gallery-background-img-right {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url('/img/background/icons/gallery-man.svg') no-repeat top 22px
+        right 75px / 62px 74px,
+      url('/img/background/icons/gallery-title-desk.svg') no-repeat top 68px
+        left 52px / 280.45px 119.25px,
       url('/img/background/icons/gallery-arrowRight-desk.svg') no-repeat bottom
         295.08px right 60.14px / 287.95px 350.49px;
   }
@@ -133,6 +151,12 @@ body {
     top: 96px;
     right: 72px;
     gap: 16px;
+  }
+
+  .gallery-button-next,
+  .gallery-button-prev {
+    width: 72px;
+    height: 71px;
   }
 
   .gallery-icon-left,
