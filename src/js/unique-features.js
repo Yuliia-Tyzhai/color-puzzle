@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiperEl = document.querySelector('.features-swiper');
 
   const slideAnimations = [
-    { rotate: -45, scale: 0.9, duration: 0.8 },
-    { rotate: -35, scale: 0.9, duration: 1 },
-    { rotate: 35, scale: 0.83, duration: 0.7 },
-    { rotate: 85, scale: 0.75, duration: 1.2 },
-    { rotate: 45, scale: 0.95, duration: 0.9 },
+    { rotate: 45, scale: 0.78, duration: 0.8 },
+    { rotate: -35, scale: 0.74, duration: 1 },
+    { rotate: -35, scale: 0.83, duration: 0.7 },
+    { rotate: -25, scale: 0.65, duration: 1.2 },
+    { rotate: 35, scale: 0.65, duration: 0.9 },
   ];
 
   if (swiperEl) {
