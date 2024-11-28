@@ -37,14 +37,26 @@ const swiperGallery = new Swiper('.gallery-swiper', {
 
       if (currentIndex > previousIndex) {
         arrowBackgroundCont.classList.remove('gallery-background-img-left');
+        arrowBackgroundCont.classList.remove(
+          'gallery-background-img-mobile-left'
+        );
         arrowBackgroundCont.classList.add('gallery-background-img');
+        arrowBackgroundCont.classList.add('gallery-background-img-mobile');
       } else if (currentIndex < previousIndex) {
         arrowBackgroundCont.classList.remove('gallery-background-img-right');
+        arrowBackgroundCont.classList.remove(
+          'gallery-background-img-mobile-right'
+        );
         arrowBackgroundCont.classList.add('gallery-background-img');
+        arrowBackgroundCont.classList.add('gallery-background-img-mobile');
 
         if (currentIndex === 0) {
           arrowBackgroundCont.classList.remove('gallery-background-img');
+          arrowBackgroundCont.classList.remove('gallery-background-img-mobile');
           arrowBackgroundCont.classList.add('gallery-background-img-left');
+          arrowBackgroundCont.classList.add(
+            'gallery-background-img-mobile-left'
+          );
         }
       }
 
@@ -87,5 +99,8 @@ function updateSlideStyles(swiper) {
   if (activeIndex === endOfSlides) {
     arrowBackgroundCont.classList.remove('gallery-background-img');
     arrowBackgroundCont.classList.add('gallery-background-img-right');
+
+    arrowBackgroundCont.classList.remove('gallery-background-img-mobile');
+    arrowBackgroundCont.classList.add('gallery-background-img-mobile-right');
   }
 }
