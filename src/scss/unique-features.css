@@ -1,22 +1,17 @@
-.unique-features-container {
+.unique-features-container.container {
   position: relative;
+  padding-top: 56px;
 }
 
-/* .about-background-img {
+.features-background-img {
   position: absolute;
   inset: 0;
-  background: url('../img/unique-features/container-svg/puzzle-container-mob-4.svg')
-      no-repeat,
-    url('/img/background/icons/about-title-mob.svg') no-repeat top 54px left 4px /
-      203.58px 68px,
-    url('/img/background/icons/about-arrows-mob.svg') no-repeat top 312.68px
-      left 139.55px / 82.33px 115.77px,
-    url('/img/background/icons/about-line-mob.svg') no-repeat bottom left 115px /
-      92px 24px;
-} */
+  background: url('/img/background/icons/featuers-zigzag-desk.svg') no-repeat
+    top left 20px / 288px 20px;
+}
 
 .features-title {
-  margin-bottom: 56px;
+  margin-bottom: 46px;
   text-align: center;
 }
 
@@ -28,7 +23,7 @@
 
 .features-swiper-wrapper {
   padding-top: 56px;
-  padding-bottom: 77px;
+  /* padding-bottom: 77px; */
 }
 
 .features-swiper-slide {
@@ -200,6 +195,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .unique-features-container.container {
+    padding-top: 106px;
+  }
+
+  .features-background-img {
+    background: url('/img/background/icons/featuers-zigzag-desk.svg') no-repeat
+      top left 33px / 1133.85px 50.39px;
+  }
+
   .features-title {
     margin-bottom: 0px;
     text-align: center;
